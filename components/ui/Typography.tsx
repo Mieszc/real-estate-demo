@@ -1,13 +1,14 @@
 import { cn } from "@/lib/utils";
+import { Slot } from "@radix-ui/react-slot";
 
 interface TypographyProps extends React.HTMLAttributes<HTMLElement> {
     variant?: "h1" | "h2" | "h3" | "h4" | "p" | "lead" | "large" | "small" | "muted" | "editorial";
     asChild?: boolean;
 }
 
-export function Typography({ className, variant = "p", ...props }: TypographyProps) {
+export function Typography({ className, variant = "p", asChild = false, ...props }: TypographyProps) {
     const isHeader = variant?.startsWith("h") && variant.length === 2;
-    const Component = (isHeader ? variant : "p") as React.ElementType;
+    const Component = asChild ? Slot : (isHeader ? variant : "p") as React.ElementType;
 
     const variants = {
         h1: "scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl",

@@ -1,27 +1,38 @@
+import dynamic from "next/dynamic";
 import { Navigation } from "@/components/sections/Navigation";
 import { Hero } from "@/components/sections/Hero";
-import { DataBar } from "@/components/sections/DataBar";
-import { ProcessSteps } from "@/components/sections/ProcessSteps";
-import { Transparency } from "@/components/sections/Transparency";
-import { Guarantee } from "@/components/sections/Guarantee";
-import { SuccessCarousel } from "@/components/sections/SuccessCarousel";
-import { FAQ } from "@/components/sections/FAQ";
-import { ContactCTA } from "@/components/sections/ContactCTA";
+import { SectorSnapshot } from "@/components/sections/SectorSnapshot";
 import { StackedCircularFooter } from "@/components/ui/stacked-circular-footer";
+import { StickyFastTrackHeader } from "@/components/layout/StickyFastTrackHeader";
+
+// Lazy-loaded interactive & below-the-fold components
+const ListingSpeedSlider = dynamic(() => import("@/components/ui/ListingSpeedSlider").then(m => m.ListingSpeedSlider));
+const EquityBuilderCalculator = dynamic(() => import("@/components/sections/EquityBuilderCalculator").then(m => m.EquityBuilderCalculator));
+const LaunchRoadmap = dynamic(() => import("@/components/sections/LaunchRoadmap").then(m => m.LaunchRoadmap));
+const MicroCaseStudies = dynamic(() => import("@/components/sections/MicroCaseStudies").then(m => m.MicroCaseStudies));
+const SellReadyDiagnostic = dynamic(() => import("@/components/sections/SellReadyDiagnostic").then(m => m.SellReadyDiagnostic));
+const FoundersGuarantee = dynamic(() => import("@/components/sections/FoundersGuarantee").then(m => m.FoundersGuarantee));
+const FAQ = dynamic(() => import("@/components/sections/FAQ").then(m => m.FAQ));
+const ContactCTA = dynamic(() => import("@/components/sections/ContactCTA").then(m => m.ContactCTA));
+const ExitIntentOffer = dynamic(() => import("@/components/ui/ExitIntentOffer").then(m => m.ExitIntentOffer));
 
 export default function Home() {
   return (
     <>
       <Navigation />
+      <StickyFastTrackHeader />
+      <ExitIntentOffer />
       <main className="w-full min-h-screen bg-brand-ink selection:bg-brand-amber selection:text-brand-ink overflow-x-hidden pt-[80px]">
         <Hero />
-        <DataBar />
-        <ProcessSteps />
-        <Transparency />
-        <Guarantee />
-        <SuccessCarousel />
+        <SectorSnapshot />
+        <ListingSpeedSlider />
+        <EquityBuilderCalculator />
+        <LaunchRoadmap />
+        <MicroCaseStudies />
+        <SellReadyDiagnostic />
         <FAQ />
         <ContactCTA />
+        <FoundersGuarantee />
         <StackedCircularFooter />
       </main>
     </>
