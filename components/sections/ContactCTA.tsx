@@ -3,6 +3,7 @@
 import { Typography } from "@/components/ui/Typography";
 import { Button } from "@/components/ui/Button";
 import { AnimateInView } from "@/components/ui/AnimateInView";
+import { MagneticWrapper } from "@/components/ui/MagneticWrapper";
 
 export function ContactCTA() {
     return (
@@ -22,16 +23,18 @@ export function ContactCTA() {
                                 Skip the line. Use our proprietary pricing engine to get an audited estimate of your London property in seconds.
                             </Typography>
 
-                            <Button
-                                variant="amber"
-                                size="lg"
-                                className="shadow-[0_0_30px_rgba(255,184,0,0.3)] hover:shadow-[0_0_50px_rgba(255,184,0,0.5)] transition-shadow duration-300"
-                                onClick={() => {
-                                    window.location.href = "/#hero-form";
-                                }}
-                            >
-                                Get Free Valuation
-                            </Button>
+                            <MagneticWrapper>
+                                <Button
+                                    variant="amber"
+                                    size="lg"
+                                    className="shadow-[0_0_30px_rgba(255,184,0,0.3)] hover:shadow-[0_0_50px_rgba(255,184,0,0.5)] transition-shadow duration-300"
+                                    onClick={() => {
+                                        window.location.href = "/#hero-form";
+                                    }}
+                                >
+                                    Get Free Valuation
+                                </Button>
+                            </MagneticWrapper>
                         </div>
                     </div>
                 </AnimateInView>

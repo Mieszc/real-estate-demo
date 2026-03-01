@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { MagneticWrapper } from "@/components/ui/MagneticWrapper";
 import { usePathname, useRouter } from 'next/navigation';
 import Link from 'next/link';
 
@@ -81,20 +82,22 @@ export function Navigation() {
                                 {link.name}
                             </Link>
                         ))}
-                        <Button
-                            variant="amber"
-                            size="sm"
-                            onClick={() => {
-                                if (pathname !== '/') {
-                                    router.push('/#hero-form');
-                                } else {
-                                    const element = document.querySelector("#hero-form");
-                                    if (element) element.scrollIntoView({ behavior: "smooth" });
-                                }
-                            }}
-                        >
-                            Get Valuation
-                        </Button>
+                        <MagneticWrapper>
+                            <Button
+                                variant="amber"
+                                size="sm"
+                                onClick={() => {
+                                    if (pathname !== '/') {
+                                        router.push('/#hero-form');
+                                    } else {
+                                        const element = document.querySelector("#hero-form");
+                                        if (element) element.scrollIntoView({ behavior: "smooth" });
+                                    }
+                                }}
+                            >
+                                Get Valuation
+                            </Button>
+                        </MagneticWrapper>
                     </div>
 
                     {/* Mobile Menu Toggle */}
@@ -128,21 +131,23 @@ export function Navigation() {
                                     {link.name}
                                 </Link>
                             ))}
-                            <Button
-                                variant="amber"
-                                className="w-full mt-2"
-                                onClick={() => {
-                                    setMobileMenuOpen(false);
-                                    if (pathname !== '/') {
-                                        router.push('/#hero-form');
-                                    } else {
-                                        const element = document.querySelector("#hero-form");
-                                        if (element) element.scrollIntoView({ behavior: "smooth" });
-                                    }
-                                }}
-                            >
-                                Get My Valuation
-                            </Button>
+                            <MagneticWrapper className="w-full mt-2">
+                                <Button
+                                    variant="amber"
+                                    className="w-full"
+                                    onClick={() => {
+                                        setMobileMenuOpen(false);
+                                        if (pathname !== '/') {
+                                            router.push('/#hero-form');
+                                        } else {
+                                            const element = document.querySelector("#hero-form");
+                                            if (element) element.scrollIntoView({ behavior: "smooth" });
+                                        }
+                                    }}
+                                >
+                                    Get My Valuation
+                                </Button>
+                            </MagneticWrapper>
                         </div>
                     </motion.div>
                 )}

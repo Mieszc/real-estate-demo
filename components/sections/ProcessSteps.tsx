@@ -1,6 +1,7 @@
 import { Typography } from "@/components/ui/Typography";
 import { Card } from "@/components/ui/Card";
 import { AnimateInView } from "@/components/ui/AnimateInView";
+import { TiltCard } from "@/components/ui/TiltCard";
 import { LineChart, ClipboardCheck, Zap } from "lucide-react";
 
 const steps = [
@@ -26,8 +27,8 @@ export function ProcessSteps() {
         <section className="w-full bg-brand-stone py-24 relative overflow-hidden" id="process">
             <div className="container mx-auto px-6 max-w-[1280px] relative z-10">
                 <AnimateInView delay={0.1} className="text-center mb-20">
-                    <Typography variant="h2" className="text-brand-ink mb-4">
-                        The Apex Horizon Difference: <span className="text-brand-amber block sm:inline mt-2 sm:mt-0">Three Steps to Sold.</span>
+                    <Typography variant="h2" className="text-brand-ink mb-4 flex flex-col sm:inline-block items-center">
+                        The Apex Horizon Difference: <Typography variant="editorial" asChild><span className="block sm:inline mt-2 sm:mt-0 sm:ml-2">Three Steps to Sold.</span></Typography>
                     </Typography>
                 </AnimateInView>
 
@@ -56,14 +57,16 @@ export function ProcessSteps() {
                                     </div>
 
                                     {/* Card Container */}
-                                    <Card className="flex-1 w-full bg-white/50 border border-brand-ink/10 hover:border-brand-amber/50 transition-all duration-300 p-8 shadow-[0_10px_40px_rgba(0,0,0,0.05)] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(255,184,0,0.15)] rounded-2xl flex flex-col items-start lg:items-center text-left lg:text-center mt-0 lg:mt-4 h-full">
-                                        <Typography variant="h3" className="text-brand-ink mb-4 text-xl font-bold">
-                                            {step.title}
-                                        </Typography>
-                                        <Typography variant="p" className="text-brand-ink/80 leading-relaxed">
-                                            {step.description}
-                                        </Typography>
-                                    </Card>
+                                    <TiltCard className="flex-1 w-full mt-0 lg:mt-4 h-full z-20">
+                                        <Card className="w-full bg-white border border-brand-ink/10 hover:border-brand-amber transition-all duration-300 p-8 shadow-[0_10px_40px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_50px_rgba(255,184,0,0.2)] rounded-2xl flex flex-col items-start lg:items-center text-left lg:text-center h-full">
+                                            <Typography variant="h3" className="text-brand-ink mb-4 text-xl font-bold">
+                                                {step.title}
+                                            </Typography>
+                                            <Typography variant="p" className="text-brand-ink/80 leading-relaxed">
+                                                {step.description}
+                                            </Typography>
+                                        </Card>
+                                    </TiltCard>
                                 </div>
                             </AnimateInView>
                         ))}

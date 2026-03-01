@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
 interface TypographyProps extends React.HTMLAttributes<HTMLElement> {
-    variant?: "h1" | "h2" | "h3" | "h4" | "p" | "lead" | "large" | "small" | "muted";
+    variant?: "h1" | "h2" | "h3" | "h4" | "p" | "lead" | "large" | "small" | "muted" | "editorial";
     asChild?: boolean;
 }
 
@@ -19,6 +19,7 @@ export function Typography({ className, variant = "p", ...props }: TypographyPro
         large: "text-lg font-semibold",
         small: "text-sm font-medium leading-none",
         muted: "text-sm text-muted-foreground",
+        editorial: "font-serif text-3xl font-medium italic text-brand-amber lg:text-4xl",
     };
 
     return (

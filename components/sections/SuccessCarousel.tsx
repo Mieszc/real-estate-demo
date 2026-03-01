@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Star, User } from "lucide-react";
+import { TiltCard } from "@/components/ui/TiltCard";
 import { Typography } from "@/components/ui/Typography";
 import { Card } from "@/components/ui/Card";
 import { cn } from "@/lib/utils";
@@ -89,30 +90,32 @@ export function SuccessCarousel() {
                             }}
                             className="absolute w-full px-4"
                         >
-                            <Card className="bg-white/5 border border-white/10 backdrop-blur-xl p-8 lg:p-12 flex flex-col items-center text-center shadow-2xl">
-                                <div className="flex gap-1 mb-6 text-brand-amber">
-                                    {[...Array(stories[currentIndex].stars)].map((_, i) => (
-                                        <Star key={i} className="w-6 h-6 fill-current" />
-                                    ))}
-                                </div>
-                                <Typography variant="h3" className="text-white mb-6">
-                                    "{stories[currentIndex].result}"
-                                </Typography>
-                                <Typography variant="lead" className="text-brand-stone/80 mb-8 italic">
-                                    {stories[currentIndex].text}
-                                </Typography>
-                                <div className="flex items-center gap-4 mt-auto">
-                                    <div className="w-12 h-12 rounded-full bg-brand-amber/20 flex items-center justify-center">
-                                        <User className="text-brand-amber w-6 h-6" />
+                            <TiltCard>
+                                <Card className="bg-white/5 border border-white/10 backdrop-blur-xl p-8 lg:p-12 flex flex-col items-center text-center shadow-2xl">
+                                    <div className="flex gap-1 mb-6 text-brand-amber">
+                                        {[...Array(stories[currentIndex].stars)].map((_, i) => (
+                                            <Star key={i} className="w-6 h-6 fill-current" />
+                                        ))}
                                     </div>
-                                    <div className="text-left">
-                                        <span className="text-brand-stone text-sm font-medium">Homeowner</span>
-                                        <Typography variant="small" className="text-brand-amber font-bold uppercase tracking-wider block">
-                                            {stories[currentIndex].location}
-                                        </Typography>
+                                    <Typography variant="h3" className="text-white mb-6">
+                                        "{stories[currentIndex].result}"
+                                    </Typography>
+                                    <Typography variant="lead" className="text-brand-stone/80 mb-8 italic">
+                                        {stories[currentIndex].text}
+                                    </Typography>
+                                    <div className="flex items-center gap-4 mt-auto">
+                                        <div className="w-12 h-12 rounded-full bg-brand-amber/20 flex items-center justify-center">
+                                            <User className="text-brand-amber w-6 h-6" />
+                                        </div>
+                                        <div className="text-left">
+                                            <span className="text-brand-stone text-sm font-medium">Homeowner</span>
+                                            <Typography variant="small" className="text-brand-amber font-bold uppercase tracking-wider block">
+                                                {stories[currentIndex].location}
+                                            </Typography>
+                                        </div>
                                     </div>
-                                </div>
-                            </Card>
+                                </Card>
+                            </TiltCard>
                         </motion.div>
                     </AnimatePresence>
 

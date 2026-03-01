@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/Button"
 import { Input } from "@/components/ui/Input"
 import { Label } from "@/components/ui/Label"
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
+import { MagneticWrapper } from "@/components/ui/MagneticWrapper"
 
 function StackedCircularFooter() {
     return (
@@ -49,7 +50,9 @@ function StackedCircularFooter() {
                                 <Label htmlFor="email" className="sr-only">Email</Label>
                                 <Input id="email" placeholder="Enter your email" type="email" className="rounded-full h-12 bg-glass-bg border-glass-border focus-visible:ring-brand-amber" />
                             </div>
-                            <Button type="submit" variant="amber" className="rounded-full h-12 px-6">Subscribe</Button>
+                            <MagneticWrapper>
+                                <Button type="submit" variant="amber" className="rounded-full h-12 px-6">Subscribe</Button>
+                            </MagneticWrapper>
                         </form>
                     </div>
 

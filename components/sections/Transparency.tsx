@@ -2,6 +2,7 @@ import { Typography } from "@/components/ui/Typography";
 import { Card } from "@/components/ui/Card";
 import { CheckCircle2, XCircle } from "lucide-react";
 import { AnimateInView } from "@/components/ui/AnimateInView";
+import { FeeCalculator } from "@/components/ui/FeeCalculator";
 
 export function Transparency() {
     return (
@@ -17,6 +18,11 @@ export function Transparency() {
                         We operate differently. No hidden fees, no bloated commissions.
                         Just premier London service at a flat, predictable rate.
                     </Typography>
+                </AnimateInView>
+
+                {/* Interactive Fee Calculator */}
+                <AnimateInView delay={0.2} className="w-full">
+                    <FeeCalculator />
                 </AnimateInView>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto items-center">

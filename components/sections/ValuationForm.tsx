@@ -6,6 +6,8 @@ import { Search, CheckCircle2, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 
+import { MagneticWrapper } from "@/components/ui/MagneticWrapper";
+
 export function ValuationForm() {
     const [address, setAddress] = useState("");
     const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -50,15 +52,17 @@ export function ValuationForm() {
                     icon={<Search className="w-5 h-5" />}
                     className="flex-1"
                 />
-                <Button
-                    type="submit"
-                    variant="amber"
-                    size="default"
-                    disabled={status === "loading" || status === "success"}
-                    className="sm:w-auto w-full"
-                >
-                    {status === "loading" ? "Analyzing..." : "Get My Valuation"}
-                </Button>
+                <MagneticWrapper className="sm:w-auto w-full">
+                    <Button
+                        type="submit"
+                        variant="amber"
+                        size="default"
+                        disabled={status === "loading" || status === "success"}
+                        className="w-full"
+                    >
+                        {status === "loading" ? "Analyzing..." : "Get My Valuation"}
+                    </Button>
+                </MagneticWrapper>
             </form>
 
             <AnimatePresence>
@@ -68,8 +72,8 @@ export function ValuationForm() {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 10, scale: 0.95 }}
                         className={`absolute top-full left-0 mt-4 p-4 rounded-md shadow-lg flex items-start gap-3 w-full backdrop-blur-md border ${status === "success"
-                                ? "bg-green-500/10 border-green-500/20 text-green-400"
-                                : "bg-red-500/10 border-red-500/20 text-red-400"
+                            ? "bg-green-500/10 border-green-500/20 text-green-400"
+                            : "bg-red-500/10 border-red-500/20 text-red-400"
                             }`}
                     >
                         {status === "success" ? (

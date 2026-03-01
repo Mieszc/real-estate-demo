@@ -9,6 +9,7 @@
   --color-foreground: #ffffff;
 
   --font-sans: var(--font-manrope);
+  --font-serif: var(--font-playfair);
 
   /* Glassmorphism utility classes */
   --color-glass-bg: rgba(255, 255, 255, 0.05);
@@ -25,6 +26,6 @@
 
 @layer utilities {
   .glass-panel {
-    @apply bg-glass-bg backdrop-blur-[12px] border border-glass-border rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.12)];
+    @apply bg-glass-bg backdrop-blur-[12px] border border-glass-border rounded-xl shadow-[0_8px_32px_#0000001f];
   }
 }

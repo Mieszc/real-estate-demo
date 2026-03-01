@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/Input";
 import { Card } from "@/components/ui/Card";
 import { AnimateInView } from "@/components/ui/AnimateInView";
 import { motion, AnimatePresence } from "framer-motion";
+import { MagneticWrapper } from "@/components/ui/MagneticWrapper";
 
 export function ContactSplit() {
     const [formState, setFormState] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
@@ -112,15 +113,17 @@ export function ContactSplit() {
                                     />
                                 </div>
 
-                                <Button
-                                    type="submit"
-                                    variant="amber"
-                                    className="w-full mt-4 h-12"
-                                    disabled={formState === 'loading' || formState === 'success'}
-                                >
-                                    {formState === 'loading' ? 'Sending...' : 'Send Message'}
-                                    {formState === 'idle' && <Send className="ml-2 w-4 h-4" />}
-                                </Button>
+                                <MagneticWrapper className="w-full mt-4">
+                                    <Button
+                                        type="submit"
+                                        variant="amber"
+                                        className="w-full h-12"
+                                        disabled={formState === 'loading' || formState === 'success'}
+                                    >
+                                        {formState === 'loading' ? 'Sending...' : 'Send Message'}
+                                        {formState === 'idle' && <Send className="ml-2 w-4 h-4" />}
+                                    </Button>
+                                </MagneticWrapper>
                             </form>
 
                             {/* Success Pop-up */}
