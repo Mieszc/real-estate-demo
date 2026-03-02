@@ -1,0 +1,296 @@
+{
+    "Navigation": {
+        "howItWorks": "Jak to działa",
+        "ourGuarantee": "Nasza gwarancja",
+        "successStories": "Historie sukcesu",
+        "faq": "FAQ",
+        "contact": "Kontakt",
+        "getValuation": "Uzyskaj wycenę",
+        "getMyValuation": "Uzyskaj moją wycenę"
+    },
+    "Hero": {
+        "titlePart1": "Sprzedawaj mądrzej z",
+        "titlePart2": "Apex Horizon.",
+        "subtitle": "Łączymy własne dane rynkowe z lokalną wiedzą ekspertów w Londynie, aby zapewnić Ci 12% więcej zysku niż u przeciętnego pośrednika.",
+        "actionSubtext": "Jedyna czynność, którą musisz dziś wykonać."
+    },
+    "SectorSnapshot": {
+        "trustedBy": "Zaufanie rodzin z całego regionu",
+        "sectors": {
+            "familySuburbs": "Przedmieścia Rodzinne",
+            "downtownLofts": "Lofty w Centrum",
+            "luxuryEstates": "Luksusowe Posiadłości",
+            "highYieldInvestments": "Inwestycje Wysokodochodowe"
+        }
+    },
+    "ListingSpeedSlider": {
+        "tagline": "Przewaga Apex",
+        "title": "Dlaczego konsekwentnie osiągamy lepsze wyniki",
+        "description": "Przeciągnij suwak, aby porównać tradycyjną rzeczywistość rynkową ze standardem Apex Horizon. Czas to pieniądz w branży nieruchomości.",
+        "traditional": {
+            "badge": "Tradycyjny Broker",
+            "subtitle": "Przestarzałe i Powolne",
+            "timeOnMarket": {
+                "label": "Czas na Rynku",
+                "value": "45+ Dni",
+                "detail": "Zaleganie na MLS, kumulowanie piętna \"Dni na Rynku\"."
+            },
+            "salesPrice": {
+                "label": "Ostateczna Cena Sprzedaży",
+                "value": "96% Ceny Ofertowej",
+                "detail": "Konieczne obniżki cen, aby wzbudzić zainteresowanie kupujących."
+            }
+        },
+        "apex": {
+            "badge": "Strategia Apex",
+            "subtitle": "Szybko i Zyskownie",
+            "timeOnMarket": {
+                "label": "Czas na Rynku",
+                "value": "7 Dni",
+                "detail": "Zainteresowanie przed rynkiem, prowadzące do wielu ofert w weekend otwarcia."
+            },
+            "salesPrice": {
+                "label": "Ostateczna Cena Sprzedaży",
+                "value": "104% Ceny Ofertowej",
+                "detail": "Wojny licytacyjne wywołane perfekcyjną prezentacją i pozycjonowaniem."
+            }
+        },
+        "mobileInstruction": "Przesuń w lewo i prawo, aby porównać"
+    },
+    "LaunchRoadmap": {
+        "tagline": "Master Plan",
+        "title": "Harmonogram wprowadzania na rynek Apex",
+        "description": "Nie tylko \"wystawiamy\" domy. Organizujemy potężną premierę produktu na rynku, zaprojektowaną tak, aby maksymalnie zwiększyć konkurencję wśród kupujących.",
+        "stepLabel": "Krok {number}",
+        "steps": {
+            "0": {
+                "title": "Analiza rynku",
+                "description": "Dogłębna eksploracja danych w celu znalezienia prawdziwej przewagi konkurencyjnej Twojego domu. My nie zgadujemy; my obliczamy optymalny punkt wejścia."
+            },
+            "1": {
+                "title": "Staging i Przygotowanie",
+                "description": "Nasz wewnętrzny zespół projektantów aranżuje Twój dom, aby wywołać maksymalne reakcje emocjonalne u luksusowych nabywców."
+            },
+            "2": {
+                "title": "Premiera cyfrowa",
+                "description": "Kinematograficzne wycieczki wideo, ukierunkowane reklamy społecznościowe i ekskluzywne zapowiedzi pozarynkowe, aby zbudować silne oczekiwanie."
+            },
+            "3": {
+                "title": "Sprzedane i Zamknięte",
+                "description": "Eksperckie negocjacje w celu zabezpieczenia warunków chroniących Twój majątek, zamykając transakcję sprawnie i bezproblemowo."
+            }
+        }
+    },
+    "ContactSplit": {
+        "titlePart1": "Omówmy Twój ",
+        "titlePart2": "następny krok.",
+        "description": "Niezależnie od tego, czy jesteś gotowy wystawić ofertę dzisiaj, czy po prostu chcesz zrozumieć obecny rynek w Londynie, nasi Główni Stratedzy czekają.",
+        "options": {
+            "0": {
+                "title": "Zadzwoń do nas",
+                "detail": "+44 (0) 20 7123 4567"
+            },
+            "1": {
+                "title": "Email",
+                "detail": "hello@apexhorizon.com"
+            },
+            "2": {
+                "title": "Biuro",
+                "detail": "1 Berkeley Square, Mayfair, Londyn"
+            }
+        },
+        "form": {
+            "title": "Wyślij wiadomość",
+            "firstName": {
+                "label": "Imię",
+                "placeholder": "James"
+            },
+            "lastName": {
+                "label": "Nazwisko",
+                "placeholder": "Bond"
+            },
+            "email": {
+                "label": "Adres e-mail",
+                "placeholder": "james@example.com"
+            },
+            "message": {
+                "label": "W czym możemy pomóc?",
+                "placeholder": "Chcę wycenić moją nieruchomość w Chelsea..."
+            },
+            "submit": "Wyślij wiadomość",
+            "sending": "Wysyłanie..."
+        },
+        "success": {
+            "title": "Wiadomość wysłana!",
+            "description": "Główny strateg skontaktuje się z Tobą w ciągu 24 godzin."
+        }
+    },
+    "EquityBuilderCalculator": {
+        "badge": "Wizualizacja Majątku",
+        "title": "Odkryj Swój Uwolniony Kapitał Własny",
+        "description": "Przestań zgadywać. Zobacz dokładnie, jak duży potencjał wypłaty gotówki jest teraz zablokowany w Twoim domu.",
+        "calculatorTitle": "Kalkulator Kapitału Własnego",
+        "calculatorDescription": "Wprowadź swoje szacunki, aby zobaczyć swoje zyski netto.",
+        "homeValueLabel": "Szacowana Wartość Domu",
+        "mortgageBalanceLabel": "Obecne Saldo Kredytu Hipotecznego",
+        "calculateButton": "Oblicz Mój Kapitał Własny",
+        "disclaimer": "*To jest narzędzie szacunkowe. Koszty zamknięcia i średnie opłaty agencyjne zostały pominięte dla uproszczenia. Poproś o pełną konsultację w celu uzyskania dokładnego zestawienia netto.",
+        "chartTitleBefore": "Scenariusz Przykładowy",
+        "chartTitleAfter": "Twój Potencjał Kapitału Własnego",
+        "banksShare": "Część Banku",
+        "yourEquity": "TWÓJ KAPITAŁ WŁASNY",
+        "homeValueMetric": "Wartość Domu",
+        "cashOutPotential": "Potencjał Wypłaty Gotówki",
+        "ctaBefore": "Odblokuj Swój Niestandardowy Raport",
+        "ctaAfter": "Wydobądź Ten Kapitał Teraz"
+    },
+    "MicroCaseStudies": {
+        "badge": "Zwycięskie migawki",
+        "title": "Dowód tkwi w zysku",
+        "description": "Nie sprzedajemy relacji; sprzedajemy wyniki. Oto spojrzenie na nasze ostatnie wskaźniki wydajności.",
+        "studies": {
+            "0": {
+                "metric": "5 dni",
+                "metricLabel": "Czas na rynku",
+                "result": "30 000 USD powyżej ceny katalogowej za dom z 3 sypialniami w Oakwood District.",
+                "highlight": "Wiele ofert"
+            },
+            "1": {
+                "metric": "108%",
+                "metricLabel": "Stosunek ceny wywoławczej do ceny sprzedaży",
+                "result": "Sprzedane poza rynkiem, bez ani jednego publicznego dnia otwartego.",
+                "highlight": "Całkowita prywatność"
+            },
+            "2": {
+                "metric": "1,2 mln USD",
+                "metricLabel": "Ostateczne zamknięcie",
+                "result": "Pobito rekord okolicy o 150 000 USD.",
+                "highlight": "Bicie rekordów"
+            },
+            "3": {
+                "metric": "0 dni",
+                "metricLabel": "Zależność",
+                "result": "Kupujący za gotówkę zabezpieczony przed zakończeniem przygotowań (staging).",
+                "highlight": "Zero stresu"
+            }
+        }
+    },
+    "SellReadyDiagnostic": {
+        "badge": "Diagnoza przed premierą",
+        "title": "Czy jesteś gotowy na wejście na rynek?",
+        "description": "Wykonaj naszą 30-sekundową ocenę. Zdiagnozujemy obecną pozycję rynkową Twojego domu i zidentyfikujemy konkretne dźwignie, aby zmaksymalizować Twoją ostateczną cenę sprzedaży.",
+        "stepProgress": "Krok {step} z {total}",
+        "step1": {
+            "question": "Jaki jest Twój główny cel sprzedaży?",
+            "options": {
+                "speed": {
+                    "label": "Szybkość i pewność",
+                    "desc": "Szybka sprzedaż, priorytetem jest harmonogram"
+                },
+                "price": {
+                    "label": "Maksymalny zwrot z inwestycji (ROI)",
+                    "desc": "Gotów poczekać na najwyższą ofertę"
+                },
+                "privacy": {
+                    "label": "Całkowita prywatność",
+                    "desc": "Transakcja pozarynkowa, dyskretna"
+                }
+            }
+        },
+        "step2": {
+            "question": "Ile prac remontowych wykonałeś w ciągu ostatnich 2 lat?",
+            "options": {
+                "none": {
+                    "label": "Minimalne / Brak",
+                    "desc": "Wymaga odświeżenia"
+                },
+                "partial": {
+                    "label": "Częściowe aktualizacje",
+                    "desc": "Zrobiona kuchnia lub łazienki"
+                },
+                "full": {
+                    "label": "Całkowita przebudowa",
+                    "desc": "Pod klucz, wysoki standard"
+                }
+            }
+        },
+        "step3": {
+            "question": "Czy obecnie współpracujesz z innym pośrednikiem?",
+            "options": {
+                "no": {
+                    "label": "Nie, badam swoje opcje"
+                },
+                "yes_active": {
+                    "label": "Tak, obecnie aktywnie, ale niezadowolony"
+                },
+                "expired": {
+                    "label": "Oferta niedawno wygasła / została wycofana"
+                }
+            }
+        },
+        "step4": {
+            "title": "Diagnoza zakończona",
+            "resultText": "Biorąc pod uwagę Twój cel, jakim jest optymalizacja pod kątem <bold>{goal}</bold>, przy <bold>{renovation}</bold> niedawnych renowacjach, jesteś na silnej pozycji, aby wykorzystać Strategię Apex.",
+            "goals": {
+                "price": "maksymalnego ROI",
+                "speed": "szybkości",
+                "privacy": "prywatności"
+            },
+            "renovations": {
+                "none": "minimalnych",
+                "partial": "częściowych",
+                "full": "kompleksowych"
+            },
+            "ctaButton": "Odblokuj darmową ocenę",
+            "ctaDisclaimer": "Bez zobowiązań. 100% poufności."
+        }
+    },
+    "FoundersGuarantee": {
+        "badge": "Zobowiązanie do przejrzystości",
+        "title": "Gwarancja Założyciela Apex",
+        "quote": "\"Kiedy umieszczasz swój dom w ofercie Apex Horizon, kładziemy na szali naszą reputację i nasze przychody. Nasza strategia opiera się na danych, realizacji i ekstremalnej odpowiedzialności.\"",
+        "guarantee": "Jeśli nie osiągniemy uzgodnionych wskaźników wydajności w ciągu pierwszych 30 dni, możesz nas natychmiast zwolnić. Zero kar. Zero opłat. Zero problemów.",
+        "founder": "— Michael Apex",
+        "role": "Założyciel i CEO",
+        "cta": "Zacznij z pewnością"
+    },
+    "FAQ": {
+        "title": "Często zadawane pytania",
+        "description": "Przejrzystość oznacza brak tajemnic. Wszystko, co musisz wiedzieć.",
+        "items": {
+            "0": {
+                "question": "Czy ta wycena to tylko zautomatyzowany algorytm?",
+                "answer": "Nasz wstępny szacunek wykorzystuje dane rynkowe o wysokiej częstotliwości, aby dać ci punkt odniesienia, ale to dopiero początek. Każda wycena jest audytowana przez lokalnego eksperta, który uwzględnia unikalne ulepszenia twojego domu i mikrotrendy w sąsiedztwie. To szybkość technologii z ludzką wiedzą."
+            },
+            "1": {
+                "question": "Dlaczego wasze opłaty są niższe niż w przypadku dużych biur nieruchomości?",
+                "answer": "Zastąpiliśmy rozdęte koszty ogólne i drogie czynsze biurowe autorskim oprogramowaniem, które usprawnia papierkową robotę. Przekazujemy te oszczędności bezpośrednio tobie. Nie idziemy na skróty; tniemy nieefektywności."
+            },
+            "2": {
+                "question": "Co jeśli się zapiszę i zmienię zdanie?",
+                "answer": "Działamy w przekonaniu, że musimy zapracować na twoją współpracę każdego dnia. Jeśli nie jesteś w 100% zadowolony z naszych usług, możesz rozwiązać umowę agencyjną w dowolnym momencie, z dowolnego powodu, bez żadnych kar. Bez niezręcznych rozmów."
+            },
+            "3": {
+                "question": "Czy będę mieć dedykowanego agenta, czy zostanę przekazany dalej?",
+                "answer": "Zostanie ci przydzielony Główny Strateg, który będzie twoim jedynym punktem kontaktowym od wyceny do  zawarcia transakcji. Nie zostaniesz przekazany do innych działów. Masz do nich bezpośredni numer."
+            }
+        }
+    },
+    "ContactCTA": {
+        "title": "Szukasz natychmiastowej wyceny?",
+        "description": "Omiń kolejkę. Skorzystaj z naszego autorskiego silnika wyceny, aby w kilka sekund uzyskać sprawdzony szacunek wartości Twojej londyńskiej nieruchomości.",
+        "button": "Zdobądź darmową wycenę"
+    },
+    "ExitIntentOffer": {
+        "playbookTitle": "Poradnik Sprzedawcy",
+        "playbookSubtitle": "Darmowe pobieranie PDF",
+        "waitText": "Poczekaj, zanim wyjdziesz!",
+        "headline": "5 czerwonych flag, że Twój agent zawyża cenę Twojego domu",
+        "description": "Nie pozwól, aby Twój dom stał się nieaktualną ofertą. Pobierz nasz poradnik dla wtajemniczonych, w którym szczegółowo opisano sygnały ostrzegawcze nieskutecznej strategii nieruchomości.",
+        "emailPlaceholder": "Wprowadź swój adres e-mail",
+        "buttonText": "Wyślij mi poradnik",
+        "privacy": "Szanujemy Twoją prywatność. Zawsze możesz anulować subskrypcję.",
+        "successTitle": "Poradnik wysłany!",
+        "successDesc": "Sprawdź swoją skrzynkę odbiorczą za kilka minut. Zamykanie tego okna..."
+    }
+}

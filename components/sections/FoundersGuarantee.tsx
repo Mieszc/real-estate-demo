@@ -1,8 +1,10 @@
 import { ShieldCheck, FileSignature } from "lucide-react";
 import { Typography } from "@/components/ui/Typography";
 import { Button } from "@/components/ui/Button";
+import { useTranslations } from "next-intl";
 
 export function FoundersGuarantee() {
+    const t = useTranslations("FoundersGuarantee");
     return (
         <section className="py-24 bg-brand-navy text-white relative overflow-hidden">
             {/* Elegant Background Texture */}
@@ -24,36 +26,36 @@ export function FoundersGuarantee() {
 
                         <div className="space-y-6 text-center md:text-left">
                             <span className="text-brand-amber font-bold tracking-widest uppercase text-sm">
-                                Commitment to Transparency
+                                {t('badge')}
                             </span>
 
                             <Typography variant="h2" className="text-white font-serif leading-tight">
-                                The Apex Founder's Guarantee
+                                {t('title')}
                             </Typography>
 
                             <div className="space-y-4 text-slate-300 text-lg">
                                 <p>
-                                    "When you list your home with Apex Horizon, we put our reputation and our revenue on the line. Our strategy is built on data, execution, and extreme accountability."
+                                    {t('quote')}
                                 </p>
                                 <p className="font-semibold text-white bg-white/5 inline-block px-4 py-2 rounded-lg">
-                                    If we fail to meet our agreed-upon performance metrics in the first 30 days, you can fire us immediately. Zero penalties. Zero fees. Zero hassle.
+                                    {t('guarantee')}
                                 </p>
                             </div>
 
                             <div className="pt-4 flex flex-col sm:flex-row items-center gap-6">
                                 <div className="text-left hidden md:block">
-                                    <h4 className="font-serif text-2xl italic text-slate-400">— Michael Apex</h4>
-                                    <p className="text-sm font-semibold text-brand-amber tracking-wider uppercase">Founder & CEO</p>
+                                    <h4 className="font-serif text-2xl italic text-slate-400">{t('founder')}</h4>
+                                    <p className="text-sm font-semibold text-brand-amber tracking-wider uppercase">{t('role')}</p>
                                 </div>
                                 <Button
                                     className="bg-white text-brand-navy hover:bg-slate-100 hover:scale-105 transition-all w-full sm:w-auto px-8"
                                     size="lg"
                                 >
-                                    Start with Confidence
+                                    {t('cta')}
                                 </Button>
                                 <div className="text-center md:hidden block">
-                                    <h4 className="font-serif text-xl italic text-slate-400">— Michael Apex</h4>
-                                    <p className="text-xs font-semibold text-brand-amber tracking-wider uppercase">Founder & CEO</p>
+                                    <h4 className="font-serif text-xl italic text-slate-400">{t('founder')}</h4>
+                                    <p className="text-xs font-semibold text-brand-amber tracking-wider uppercase">{t('role')}</p>
                                 </div>
                             </div>
                         </div>

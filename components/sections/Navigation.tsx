@@ -5,18 +5,22 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { MagneticWrapper } from "@/components/ui/MagneticWrapper";
-import { usePathname, useRouter } from 'next/navigation';
-import Link from 'next/link';
+import { usePathname, useRouter } from '@/i18n/routing';
+import { Link } from '@/i18n/routing';
+import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
 
-const NAV_LINKS = [
-    { name: "How it Works", href: "/#process" },
-    { name: "Our Guarantee", href: "/#guarantee" },
-    { name: "Success Stories", href: "/#success" },
-    { name: "FAQ", href: "/#faq" },
-    { name: "Contact", href: "/contact" },
-];
+import { useTranslations } from 'next-intl';
 
 export function Navigation() {
+    const t = useTranslations('Navigation');
+
+    const NAV_LINKS = [
+        { name: t('howItWorks'), href: "/#process" },
+        { name: t('ourGuarantee'), href: "/#guarantee" },
+        { name: t('successStories'), href: "/#success" },
+        { name: t('faq'), href: "/#faq" },
+        { name: t('contact'), href: "/contact" },
+    ];
     const [isScrolled, setIsScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const pathname = usePathname();
@@ -58,14 +62,16 @@ export function Navigation() {
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
-                className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-brand-ink/80 backdrop-blur-md border-b border-white/10 py-3" : "bg-transparent py-5"
+                className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+                    ? "bg-white/95 backdrop-blur-md border-b border-brand-ink/10 py-3 shadow-sm"
+                    : "bg-transparent py-5"
                     }`}
             >
                 <div className="container mx-auto px-6 max-w-[1280px] flex items-center justify-between">
                     {/* Logo */}
                     <Link
                         href="/"
-                        className="text-white font-bold text-xl tracking-tight"
+                        className={`font-bold text-xl tracking-tight transition-colors duration-300 ${isScrolled ? "text-black" : "text-white"}`}
                     >
                         Apex <span className="text-brand-amber">Horizon.</span>
                     </Link>
@@ -77,14 +83,17 @@ export function Navigation() {
                                 key={link.name}
                                 href={link.href}
                                 onClick={(e) => handleNavClick(e, link.href)}
-                                className="text-sm font-medium text-brand-stone/80 hover:text-white transition-colors"
+                                className={`text-sm font-medium transition-colors duration-300 ${isScrolled
+                                    ? "text-black/70 hover:text-black"
+                                    : "text-white/80 hover:text-white"}`}
                             >
                                 {link.name}
                             </Link>
                         ))}
+                        <LanguageSwitcher isScrolled={isScrolled} />
                         <MagneticWrapper>
                             <Button
-                                variant="amber"
+                                variant={isScrolled ? "ink" : "amber"}
                                 size="sm"
                                 onClick={() => {
                                     if (pathname !== '/') {
@@ -95,14 +104,14 @@ export function Navigation() {
                                     }
                                 }}
                             >
-                                Get Valuation
+                                {t('getValuation')}
                             </Button>
                         </MagneticWrapper>
                     </div>
 
                     {/* Mobile Menu Toggle */}
                     <button
-                        className="md:hidden text-white p-2"
+                        className={`md:hidden p-2 transition-colors duration-300 ${isScrolled ? "text-black" : "text-white"}`}
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     >
                         {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -131,6 +140,7 @@ export function Navigation() {
                                     {link.name}
                                 </Link>
                             ))}
+                            <LanguageSwitcher isScrolled={false} />
                             <MagneticWrapper className="w-full mt-2">
                                 <Button
                                     variant="amber"
@@ -145,7 +155,7 @@ export function Navigation() {
                                         }
                                     }}
                                 >
-                                    Get My Valuation
+                                    {t('getMyValuation')}
                                 </Button>
                             </MagneticWrapper>
                         </div>

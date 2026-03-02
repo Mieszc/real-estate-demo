@@ -8,8 +8,10 @@ import { Label } from "@/components/ui/Label";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Typography } from "@/components/ui/Typography";
+import { useTranslations } from "next-intl";
 
 export function EquityBuilderCalculator() {
+    const t = useTranslations("EquityBuilderCalculator");
     const [mortgageBalance, setMortgageBalance] = useState<number | "">("");
     const [estimatedValue, setEstimatedValue] = useState<number | "">("");
     const [isCalculated, setIsCalculated] = useState(false);
@@ -49,13 +51,13 @@ export function EquityBuilderCalculator() {
                     <div className="space-y-8">
                         <div>
                             <span className="text-brand-amber text-sm font-bold tracking-wider uppercase mb-3 inline-block">
-                                Wealth Visualization
+                                {t('badge')}
                             </span>
                             <Typography variant="h2" className="mb-4">
-                                Discover Your Unlocked Equity
+                                {t('title')}
                             </Typography>
                             <Typography variant="lead" className="text-muted-foreground">
-                                Stop guessing. See exactly how much cash-out potential you have tied up in your home right now.
+                                {t('description')}
                             </Typography>
                         </div>
 
@@ -63,14 +65,14 @@ export function EquityBuilderCalculator() {
                             <div className="flex flex-col space-y-1.5 p-6 border-b border-border/50">
                                 <h3 className="font-semibold leading-none tracking-tight flex items-center gap-2 text-xl">
                                     <Calculator className="w-5 h-5 text-brand-amber" />
-                                    <span>Equity Calculator</span>
+                                    <span>{t('calculatorTitle')}</span>
                                 </h3>
-                                <p className="text-sm text-muted-foreground">Enter your estimates to see your net proceeds.</p>
+                                <p className="text-sm text-muted-foreground">{t('calculatorDescription')}</p>
                             </div>
                             <div className="p-6">
                                 <form onSubmit={handleCalculate} className="space-y-6">
                                     <div className="space-y-2">
-                                        <Label htmlFor="estimatedValue">Estimated Home Value</Label>
+                                        <Label htmlFor="estimatedValue">{t('homeValueLabel')}</Label>
                                         <div className="relative">
                                             <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground">$</span>
                                             <Input
@@ -88,7 +90,7 @@ export function EquityBuilderCalculator() {
                                     </div>
 
                                     <div className="space-y-2">
-                                        <Label htmlFor="mortgageBalance">Current Mortgage Balance</Label>
+                                        <Label htmlFor="mortgageBalance">{t('mortgageBalanceLabel')}</Label>
                                         <div className="relative">
                                             <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground">$</span>
                                             <Input
@@ -110,13 +112,13 @@ export function EquityBuilderCalculator() {
                                         className="w-full bg-brand-navy hover:bg-brand-navy/90 text-white group"
                                         size="lg"
                                     >
-                                        Calculate My Equity
+                                        {t('calculateButton')}
                                         <ChevronRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                     </Button>
                                 </form>
                             </div>
                             <div className="bg-muted/50 rounded-b-xl border-t border-border/50 text-xs text-muted-foreground p-4">
-                                *This is an estimation tool. Closing costs and agent fees averages are excluded for simplicity. Request a full consultation for an exact net sheet.
+                                {t('disclaimer')}
                             </div>
                         </Card>
                     </div>
@@ -133,7 +135,7 @@ export function EquityBuilderCalculator() {
                                 </div>
 
                                 <Typography variant="h4" className="mb-6 relative z-10">
-                                    {isCalculated ? "Your Equity Potential" : "Example Scenario"}
+                                    {isCalculated ? t('chartTitleAfter') : t('chartTitleBefore')}
                                 </Typography>
 
                                 {/* Visual Bar */}
@@ -146,7 +148,7 @@ export function EquityBuilderCalculator() {
                                     >
                                         {mortgagePercentage > 15 && (
                                             <span className="text-xs font-semibold text-slate-500 truncate px-2">
-                                                Bank's Share
+                                                {t('banksShare')}
                                             </span>
                                         )}
                                     </motion.div>
@@ -159,7 +161,7 @@ export function EquityBuilderCalculator() {
                                         <div className="absolute inset-0 bg-white/20 w-1/2 skew-x-12 translate-x-[-150%] animate-[shimmer_3s_infinite]" />
                                         {equityPercentage > 15 && (
                                             <span className="text-xs font-bold text-white tracking-wider truncate px-2 drop-shadow-sm">
-                                                YOUR EQUITY
+                                                {t('yourEquity')}
                                             </span>
                                         )}
                                     </motion.div>
@@ -170,7 +172,7 @@ export function EquityBuilderCalculator() {
                                     <div className="space-y-2 p-4 rounded-xl bg-slate-50 border border-slate-100">
                                         <div className="flex items-center gap-2 text-slate-500 mb-1">
                                             <Home className="w-4 h-4" />
-                                            <span className="text-sm font-medium">Home Value</span>
+                                            <span className="text-sm font-medium">{t('homeValueMetric')}</span>
                                         </div>
                                         <Typography variant="h3" className="text-slate-900">
                                             {formatCurrency(Number(displayValue))}
@@ -180,7 +182,7 @@ export function EquityBuilderCalculator() {
                                     <div className="space-y-2 p-4 rounded-xl bg-brand-amber/10 border border-brand-amber/20">
                                         <div className="flex items-center gap-2 text-brand-amber mb-1">
                                             <PiggyBank className="w-4 h-4" />
-                                            <span className="text-sm font-medium">Cash Out Potential</span>
+                                            <span className="text-sm font-medium">{t('cashOutPotential')}</span>
                                         </div>
                                         <Typography variant="h3" className="text-brand-amber">
                                             {formatCurrency(equityUnlocked)}
@@ -198,7 +200,7 @@ export function EquityBuilderCalculator() {
                                 <Button
                                     className={`rounded-full px-8 py-6 text-lg font-semibold shadow-lg transition-all ${isCalculated ? 'bg-brand-navy text-white hover:bg-brand-navy/90 hover:scale-105 hover:shadow-xl' : 'bg-background border-2 border-brand-navy text-brand-navy hover:bg-muted'}`}
                                 >
-                                    {isCalculated ? "Extract This Equity Now" : "Unlock Your Custom Report"}
+                                    {isCalculated ? t('ctaAfter') : t('ctaBefore')}
                                 </Button>
                             </motion.div>
 

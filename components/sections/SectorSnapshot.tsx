@@ -1,13 +1,16 @@
 "use client";
 
 import { Trees, Building2, Castle, MapPin } from "lucide-react";
+import { useTranslations } from 'next-intl';
 
 export function SectorSnapshot() {
+    const t = useTranslations('SectorSnapshot');
+
     const sectors = [
-        { name: "Family Suburbs", icon: Trees },
-        { name: "Downtown Lofts", icon: Building2 },
-        { name: "Luxury Estates", icon: Castle },
-        { name: "High-Yield Investments", icon: MapPin },
+        { name: t('sectors.familySuburbs'), icon: Trees },
+        { name: t('sectors.downtownLofts'), icon: Building2 },
+        { name: t('sectors.luxuryEstates'), icon: Castle },
+        { name: t('sectors.highYieldInvestments'), icon: MapPin },
     ];
 
     return (
@@ -16,7 +19,7 @@ export function SectorSnapshot() {
                 <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16">
                     <div className="shrink-0 text-center md:text-left">
                         <p className="text-sm font-semibold tracking-widest text-slate-500 uppercase">
-                            Trusted by families across the Region
+                            {t('trustedBy')}
                         </p>
                     </div>
 

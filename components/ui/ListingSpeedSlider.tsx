@@ -4,8 +4,10 @@ import { useState, useRef, useEffect } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import { MoveHorizontal, Clock, TrendingUp, CheckCircle2, AlertCircle } from "lucide-react";
 import { Typography } from "@/components/ui/Typography";
+import { useTranslations } from 'next-intl';
 
 export function ListingSpeedSlider() {
+    const t = useTranslations('ListingSpeedSlider');
     const sliderPosition = useMotionValue(50);
     const containerRef = useRef<HTMLDivElement>(null);
     const [isDragging, setIsDragging] = useState(false);
@@ -57,13 +59,13 @@ export function ListingSpeedSlider() {
             <div className="container mx-auto px-4 max-w-5xl">
                 <div className="text-center mb-16 space-y-4">
                     <span className="text-brand-amber font-bold tracking-widest uppercase text-sm">
-                        The Apex Advantage
+                        {t('tagline')}
                     </span>
                     <Typography variant="h2" className="text-brand-ink">
-                        Why We Consistently Outperform
+                        {t('title')}
                     </Typography>
                     <Typography variant="lead" className="max-w-2xl mx-auto text-brand-ink/80">
-                        Drag the slider to compare the traditional market reality against the Apex Horizon standard. Time is money in real estate.
+                        {t('description')}
                     </Typography>
                 </div>
 
@@ -83,30 +85,30 @@ export function ListingSpeedSlider() {
                     <div className="absolute inset-0 bg-slate-100 flex flex-col justify-center p-8 md:p-16 text-brand-ink">
                         <div className="max-w-md ml-auto md:w-1/2 opacity-80 pl-8">
                             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-ink/10 text-brand-ink text-sm font-semibold mb-6">
-                                <AlertCircle className="w-4 h-4" /> Traditional Broker
+                                <AlertCircle className="w-4 h-4" /> {t('traditional.badge')}
                             </span>
 
                             <h3 className="text-4xl md:text-5xl font-bold text-brand-ink mb-6 font-serif">
-                                Stale & Slow
+                                {t('traditional.subtitle')}
                             </h3>
 
                             <div className="space-y-8">
                                 <div className="space-y-2 border-l-4 border-slate-300 pl-4">
                                     <div className="flex items-center gap-2 text-brand-ink/70">
                                         <Clock className="w-5 h-5" />
-                                        <span className="uppercase tracking-wider font-semibold text-sm">Time on Market</span>
+                                        <span className="uppercase tracking-wider font-semibold text-sm">{t('traditional.timeOnMarket.label')}</span>
                                     </div>
-                                    <div className="text-3xl font-bold text-brand-ink">45+ Days</div>
-                                    <p className="text-brand-ink/70 text-sm">Sitting on MLS, accumulating "Days on Market" stigma.</p>
+                                    <div className="text-3xl font-bold text-brand-ink">{t('traditional.timeOnMarket.value')}</div>
+                                    <p className="text-brand-ink/70 text-sm">{t('traditional.timeOnMarket.detail')}</p>
                                 </div>
 
                                 <div className="space-y-2 border-l-4 border-slate-300 pl-4">
                                     <div className="flex items-center gap-2 text-brand-ink/70">
                                         <TrendingUp className="w-5 h-5" />
-                                        <span className="uppercase tracking-wider font-semibold text-sm">Final Sales Price</span>
+                                        <span className="uppercase tracking-wider font-semibold text-sm">{t('traditional.salesPrice.label')}</span>
                                     </div>
-                                    <div className="text-3xl font-bold text-brand-ink">96% of Ask</div>
-                                    <p className="text-brand-ink/70 text-sm">Price drops required to generate buyer interest.</p>
+                                    <div className="text-3xl font-bold text-brand-ink">{t('traditional.salesPrice.value')}</div>
+                                    <p className="text-brand-ink/70 text-sm">{t('traditional.salesPrice.detail')}</p>
                                 </div>
                             </div>
                         </div>
@@ -119,30 +121,30 @@ export function ListingSpeedSlider() {
                     >
                         <div className="max-w-md md:w-1/2 flex flex-col items-start pr-8">
                             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-ink/10 text-brand-ink text-sm font-bold mb-6">
-                                <CheckCircle2 className="w-4 h-4" /> The Apex Strategy
+                                <CheckCircle2 className="w-4 h-4" /> {t('apex.badge')}
                             </span>
 
                             <h3 className="text-4xl md:text-5xl font-bold text-brand-ink mb-6 font-serif">
-                                Fast & Profitable
+                                {t('apex.subtitle')}
                             </h3>
 
                             <div className="space-y-8 w-full">
                                 <div className="space-y-2 border-l-4 border-brand-amber pl-4">
                                     <div className="flex items-center gap-2 text-brand-ink/70">
                                         <Clock className="w-5 h-5 text-brand-amber" />
-                                        <span className="uppercase tracking-wider font-semibold text-sm">Time on Market</span>
+                                        <span className="uppercase tracking-wider font-semibold text-sm">{t('apex.timeOnMarket.label')}</span>
                                     </div>
-                                    <div className="text-4xl font-bold text-brand-ink">7 Days</div>
-                                    <p className="text-brand-ink/80 text-sm">Pre-market hype leading to opening weekend multiple-offers.</p>
+                                    <div className="text-4xl font-bold text-brand-ink">{t('apex.timeOnMarket.value')}</div>
+                                    <p className="text-brand-ink/80 text-sm">{t('apex.timeOnMarket.detail')}</p>
                                 </div>
 
                                 <div className="space-y-2 border-l-4 border-brand-amber pl-4">
                                     <div className="flex items-center gap-2 text-brand-ink/70">
                                         <TrendingUp className="w-5 h-5 text-brand-amber" />
-                                        <span className="uppercase tracking-wider font-semibold text-sm">Final Sales Price</span>
+                                        <span className="uppercase tracking-wider font-semibold text-sm">{t('apex.salesPrice.label')}</span>
                                     </div>
-                                    <div className="text-4xl font-bold text-green-600">104% of Ask</div>
-                                    <p className="text-brand-ink/80 text-sm">Bidding wars generated by perfect presentation & positioning.</p>
+                                    <div className="text-4xl font-bold text-green-600">{t('apex.salesPrice.value')}</div>
+                                    <p className="text-brand-ink/80 text-sm">{t('apex.salesPrice.detail')}</p>
                                 </div>
                             </div>
                         </div>
@@ -167,7 +169,7 @@ export function ListingSpeedSlider() {
 
                 {/* Mobile instruction */}
                 <p className="text-center text-sm text-slate-400 mt-6 md:hidden">
-                    Swipe left and right to compare
+                    {t('mobileInstruction')}
                 </p>
             </div>
         </section>

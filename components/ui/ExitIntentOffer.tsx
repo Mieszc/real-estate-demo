@@ -6,8 +6,10 @@ import { BookOpen, X, Download, ShieldCheck, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { Typography } from "@/components/ui/Typography";
+import { useTranslations } from "next-intl";
 
 export function ExitIntentOffer() {
+    const t = useTranslations("ExitIntentOffer");
     const [isVisible, setIsVisible] = useState(false);
     const [email, setEmail] = useState("");
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -79,8 +81,8 @@ export function ExitIntentOffer() {
                             <div className="w-24 h-32 bg-brand-amber text-brand-navy rounded-lg shadow-[0_0_30px_rgba(217,119,6,0.3)] flex items-center justify-center mb-6 transform -rotate-6 hover:rotate-0 transition-transform">
                                 <BookOpen className="w-12 h-12" />
                             </div>
-                            <h3 className="font-serif font-bold text-xl mb-2">The Seller's Playbook</h3>
-                            <p className="text-slate-400 text-sm">Free PDF Download</p>
+                            <h3 className="font-serif font-bold text-xl mb-2">{t('playbookTitle')}</h3>
+                            <p className="text-slate-400 text-sm">{t('playbookSubtitle')}</p>
                         </div>
 
                         {/* Content side */}
@@ -93,20 +95,20 @@ export function ExitIntentOffer() {
                             {!isSubmitted ? (
                                 <>
                                     <span className="text-red-500 font-bold tracking-widest uppercase text-xs mb-3 block">
-                                        Wait before you go!
+                                        {t('waitText')}
                                     </span>
                                     <Typography variant="h3" className="text-brand-navy mb-4 leading-tight font-serif min-h-[60px]">
-                                        5 Red Flags Your Agent Is Overpricing Your Home
+                                        {t('headline')}
                                     </Typography>
                                     <p className="text-slate-600 mb-6 text-sm">
-                                        Don't let your home become a stale listing. Download our insider playbook detailing the warning signs of a failing real estate strategy.
+                                        {t('description')}
                                     </p>
 
                                     <form onSubmit={handleSubmit} className="space-y-4 relative z-10">
                                         <div className="space-y-2">
                                             <Input
                                                 type="email"
-                                                placeholder="Enter your email address"
+                                                placeholder={t('emailPlaceholder')}
                                                 required
                                                 className="bg-slate-50 border-slate-200 text-brand-navy"
                                                 value={email}
@@ -115,12 +117,12 @@ export function ExitIntentOffer() {
                                         </div>
                                         <Button type="submit" className="w-full bg-brand-amber text-brand-navy hover:bg-brand-amber/90 font-bold group">
                                             <Download className="w-4 h-4 mr-2" />
-                                            Send Me The Playbook
+                                            {t('buttonText')}
                                             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                                         </Button>
                                     </form>
                                     <p className="text-[10px] text-center text-slate-400 mt-4 uppercase tracking-wider">
-                                        We respect your privacy. Unsubscribe anytime.
+                                        {t('privacy')}
                                     </p>
                                 </>
                             ) : (
@@ -129,10 +131,10 @@ export function ExitIntentOffer() {
                                         <ShieldCheck className="w-8 h-8" />
                                     </div>
                                     <Typography variant="h3" className="text-brand-navy mb-2">
-                                        Playbook Sent!
+                                        {t('successTitle')}
                                     </Typography>
                                     <p className="text-slate-600 text-sm">
-                                        Check your inbox in a few minutes. Closing this window...
+                                        {t('successDesc')}
                                     </p>
                                 </div>
                             )}

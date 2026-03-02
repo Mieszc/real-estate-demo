@@ -1,0 +1,296 @@
+{
+    "Navigation": {
+        "howItWorks": "Wie es funktioniert",
+        "ourGuarantee": "Unsere Garantie",
+        "successStories": "Erfolgsgeschichten",
+        "faq": "FAQ",
+        "contact": "Kontakt",
+        "getValuation": "Bewertung anfordern",
+        "getMyValuation": "Meine Bewertung anfordern"
+    },
+    "Hero": {
+        "titlePart1": "Intelligenter verkaufen mit",
+        "titlePart2": "Apex Horizon.",
+        "subtitle": "Wir kombinieren proprietäre Marktdaten mit lokaler Londoner Expertise, um für Sie 12% mehr als der durchschnittliche Makler zu erzielen.",
+        "actionSubtext": "Die einzige Aktion, die Sie heute unternehmen müssen."
+    },
+    "SectorSnapshot": {
+        "trustedBy": "Von Familien in der gesamten Region vertraut",
+        "sectors": {
+            "familySuburbs": "Familienvororte",
+            "downtownLofts": "Innenstadt-Lofts",
+            "luxuryEstates": "Luxusanwesen",
+            "highYieldInvestments": "Renditestarke Immobilien"
+        }
+    },
+    "ListingSpeedSlider": {
+        "tagline": "Der Apex Vorteil",
+        "title": "Warum wir beständig besser abschneiden",
+        "description": "Ziehen Sie den Schieberegler, um die traditionelle Marktrealität mit dem Standard von Apex Horizon zu vergleichen. Zeit ist Geld in der Immobilienbranche.",
+        "traditional": {
+            "badge": "Traditioneller Makler",
+            "subtitle": "Abgestanden & Langsam",
+            "timeOnMarket": {
+                "label": "Zeit auf dem Markt",
+                "value": "45+ Tage",
+                "detail": "Sitzt auf MLS, sammelt das Stigma der \"Tage auf dem Markt\"."
+            },
+            "salesPrice": {
+                "label": "Endgültiger Verkaufspreis",
+                "value": "96% der Forderung",
+                "detail": "Preissenkungen erforderlich, um das Interesse der Käufer zu wecken."
+            }
+        },
+        "apex": {
+            "badge": "Die Apex Strategie",
+            "subtitle": "Schnell & Profitabel",
+            "timeOnMarket": {
+                "label": "Zeit auf dem Markt",
+                "value": "7 Tage",
+                "detail": "Vorab-Markthype führt zu Mehrfachangeboten am Eröffnungswochenende."
+            },
+            "salesPrice": {
+                "label": "Endgültiger Verkaufspreis",
+                "value": "104% der Forderung",
+                "detail": "Bieterkämpfe, die durch perfekte Präsentation und Positionierung erzeugt werden."
+            }
+        },
+        "mobileInstruction": "Wischen Sie nach links und rechts, um zu vergleichen"
+    },
+    "LaunchRoadmap": {
+        "tagline": "Der Masterplan",
+        "title": "Die Apex-Einführungs-Roadmap",
+        "description": "Wir \"listen\" nicht nur Häuser auf. Wir inszenieren eine wirkungsvolle Produkteinführung, die darauf ausgelegt ist, den Käuferwettbewerb zu maximieren.",
+        "stepLabel": "Schritt {number}",
+        "steps": {
+            "0": {
+                "title": "Marktanalyse",
+                "description": "Eingehendes Data Mining, um den wahren Wettbewerbsvorteil Ihres Hauses zu finden. Wir raten nicht; wir berechnen den optimalen Einstiegspunkt."
+            },
+            "1": {
+                "title": "Inszenierung & Vorbereitung",
+                "description": "Unser hauseigenes Designteam stylt Ihr Zuhause, um bei Luxuskäufern maximale emotionale Reaktionen hervorzurufen."
+            },
+            "2": {
+                "title": "Digitale Einführung",
+                "description": "Kinoreife Videotouren, zielgerichtete Social-Media-Anzeigen und exklusive Off-Market-Vorschauen, um starke Vorfreude zu wecken."
+            },
+            "3": {
+                "title": "Verkauft & Abgeschlossen",
+                "description": "Expertenverhandlungen, um Bedingungen zu sichern, die Ihr Vermögen schützen und die Transaktion reibungslos und geräuschlos abschließen."
+            }
+        }
+    },
+    "ContactSplit": {
+        "titlePart1": "Lassen Sie uns Ihren ",
+        "titlePart2": "nächsten Schritt besprechen.",
+        "description": "Unabhängig davon, ob Sie heute inserieren möchten oder nur den aktuellen Londoner Markt verstehen wollen, unsere Lead Strategists stehen bereit.",
+        "options": {
+            "0": {
+                "title": "Rufen Sie uns an",
+                "detail": "+44 (0) 20 7123 4567"
+            },
+            "1": {
+                "title": "E-Mail",
+                "detail": "hello@apexhorizon.com"
+            },
+            "2": {
+                "title": "Büro",
+                "detail": "1 Berkeley Square, Mayfair, London"
+            }
+        },
+        "form": {
+            "title": "Eine Nachricht senden",
+            "firstName": {
+                "label": "Vorname",
+                "placeholder": "James"
+            },
+            "lastName": {
+                "label": "Nachname",
+                "placeholder": "Bond"
+            },
+            "email": {
+                "label": "E-Mail-Adresse",
+                "placeholder": "james@example.com"
+            },
+            "message": {
+                "label": "Wie können wir helfen?",
+                "placeholder": "Ich möchte meine Immobilie in Chelsea bewerten lassen..."
+            },
+            "submit": "Nachricht senden",
+            "sending": "Wird gesendet..."
+        },
+        "success": {
+            "title": "Nachricht gesendet!",
+            "description": "Ein leitender Stratege wird Sie innerhalb von 24 Stunden kontaktieren."
+        }
+    },
+    "EquityBuilderCalculator": {
+        "badge": "Vermögensvisualisierung",
+        "title": "Entdecken Sie Ihr ungenutztes Eigenkapital",
+        "description": "Hören Sie auf zu raten. Sehen Sie genau, wie viel Auszahlungspotenzial derzeit in Ihrem Haus steckt.",
+        "calculatorTitle": "Eigenkapitalrechner",
+        "calculatorDescription": "Geben Sie Ihre Schätzungen ein, um Ihren Nettoerlös zu sehen.",
+        "homeValueLabel": "Geschätzter Immobilienwert",
+        "mortgageBalanceLabel": "Aktueller Hypothekensaldo",
+        "calculateButton": "Mein Eigenkapital berechnen",
+        "disclaimer": "*Dies ist ein Schätzungstool. Abschlusskosten und durchschnittliche Maklergebühren sind der Einfachheit halber ausgeschlossen. Fordern Sie eine vollständige Beratung für eine exakte Nettoaufstellung an.",
+        "chartTitleBefore": "Beispielszenario",
+        "chartTitleAfter": "Ihr Eigenkapitalpotenzial",
+        "banksShare": "Anteil der Bank",
+        "yourEquity": "IHR EIGENKAPITAL",
+        "homeValueMetric": "Immobilienwert",
+        "cashOutPotential": "Auszahlungspotenzial",
+        "ctaBefore": "Ihren individuellen Bericht freischalten",
+        "ctaAfter": "Dieses Eigenkapital jetzt extrahieren"
+    },
+    "MicroCaseStudies": {
+        "badge": "Gewinner-Schnappschüsse",
+        "title": "Der Beweis liegt im Gewinn",
+        "description": "Wir verkaufen keine Beziehungen; wir verkaufen Ergebnisse. Hier ist ein Blick auf unsere jüngsten Leistungskennzahlen.",
+        "studies": {
+            "0": {
+                "metric": "5 Tage",
+                "metricLabel": "Zeit auf dem Markt",
+                "result": "30.000 $ über dem Listenpreis für ein 3-Bett-Zimmer im Oakwood District.",
+                "highlight": "Mehrteilige Angebote"
+            },
+            "1": {
+                "metric": "108%",
+                "metricLabel": "Verhältnis von Anfrage zu Verkauf",
+                "result": "Auff market verkauft, ohne ein einziges öffentliches Open House.",
+                "highlight": "Absolute Privatsphäre"
+            },
+            "2": {
+                "metric": "1,2 Mio. $",
+                "metricLabel": "Endgültiger Abschluss",
+                "result": "Die Nachbarschaftsobergrenze um 150.000 $ gesprengt.",
+                "highlight": "Rekordverdächtig"
+            },
+            "3": {
+                "metric": "0 Tage",
+                "metricLabel": "Kontingenz",
+                "result": "All-Cash-Käufer gesichert, bevor die Inszenierung abgeschlossen war.",
+                "highlight": "Null Stress"
+            }
+        }
+    },
+    "SellReadyDiagnostic": {
+        "badge": "Pre-Launch-Diagnose",
+        "title": "Sind Sie bereit für den Markt?",
+        "description": "Machen Sie unsere 30-Sekunden-Bewertung. Wir diagnostizieren die aktuelle Marktposition Ihres Hauses und identifizieren spezifische Hebel, um Ihren endgültigen Verkaufspreis zu maximieren.",
+        "stepProgress": "Schritt {step} von {total}",
+        "step1": {
+            "question": "Was ist Ihr primäres Ziel für den Verkauf?",
+            "options": {
+                "speed": {
+                    "label": "Geschwindigkeit & Gewissheit",
+                    "desc": "Schnell verkaufen, Zeitplan hat Priorität"
+                },
+                "price": {
+                    "label": "Maximaler ROI",
+                    "desc": "Bereit, auf das höchste Angebot zu warten"
+                },
+                "privacy": {
+                    "label": "Absolute Privatsphäre",
+                    "desc": "Off-Market, ruhige Transaktion"
+                }
+            }
+        },
+        "step2": {
+            "question": "Wie viel Renovierungsarbeit haben Sie in den letzten 2 Jahren geleistet?",
+            "options": {
+                "none": {
+                    "label": "Minimal / Keine",
+                    "desc": "Benötigt eine Auffrischung"
+                },
+                "partial": {
+                    "label": "Teilweise Aktualisierungen",
+                    "desc": "Küche oder Bäder gemacht"
+                },
+                "full": {
+                    "label": "Kompletter Umbau",
+                    "desc": "Schlüsselfertig, hochwertig"
+                }
+            }
+        },
+        "step3": {
+            "question": "Sind Sie derzeit bei einem anderen Makler gelistet?",
+            "options": {
+                "no": {
+                    "label": "Nein, ich prüfe meine Optionen"
+                },
+                "yes_active": {
+                    "label": "Ja, derzeit aktiv, aber unzufrieden"
+                },
+                "expired": {
+                    "label": "Angebot kürzlich abgelaufen / zurückgezogen"
+                }
+            }
+        },
+        "step4": {
+            "title": "Diagnose abgeschlossen",
+            "resultText": "Basierend auf Ihrem Ziel, auf <bold>{goal}</bold> zu optimieren, mit <bold>{renovation}</bold> jüngsten Renovierungen, sind Sie in einer starken Position, um die Apex-Strategie zu nutzen.",
+            "goals": {
+                "price": "maximalen ROI",
+                "speed": "Geschwindigkeit",
+                "privacy": "Privatsphäre"
+            },
+            "renovations": {
+                "none": "minimalen",
+                "partial": "teilweisen",
+                "full": "kompletten"
+            },
+            "ctaButton": "Kostenlose Bewertung freischalten",
+            "ctaDisclaimer": "Unverbindlich. 100% vertraulich."
+        }
+    },
+    "FoundersGuarantee": {
+        "badge": "Verpflichtung zur Transparenz",
+        "title": "Die Apex-Gründergarantie",
+        "quote": "\"Wenn Sie Ihr Haus bei Apex Horizon listen, setzen wir unseren Ruf und unseren Umsatz aufs Spiel. Unsere Strategie basiert auf Daten, Ausführung und extremer Verantwortlichkeit.\"",
+        "guarantee": "Wenn wir unsere vereinbarten Leistungskennzahlen in den ersten 30 Tagen nicht erreichen, können Sie uns sofort entlassen. Null Strafen. Null Gebühren. Null Ärger.",
+        "founder": "— Michael Apex",
+        "role": "Gründer & CEO",
+        "cta": "Mit Vertrauen starten"
+    },
+    "FAQ": {
+        "title": "Häufige Fragen",
+        "description": "Transparenz bedeutet keine Geheimnisse. Alles, was Sie wissen müssen.",
+        "items": {
+            "0": {
+                "question": "Ist diese Bewertung nur ein automatisierter Algorithmus?",
+                "answer": "Unsere anfängliche Schätzung verwendet Hochfrequenz-Marktdaten, um Ihnen eine Basislinie zu geben, aber das ist nur der Anfang. Jede Bewertung wird von einem lokalen Experten geprüft, der die einzigartigen Upgrades Ihres Hauses und Nachbarschafts-Mikrotrends berücksichtigt. Es ist Technologiegeschwindigkeit mit menschlicher Expertise."
+            },
+            "1": {
+                "question": "Warum sind Ihre Gebühren niedriger als bei den großen Maklern?",
+                "answer": "Wir haben aufgeblähte Gemeinkosten und teure Büromieten durch proprietäre Software ersetzt, die den Papierkram rationalisiert. Wir geben diese Einsparungen direkt an Sie weiter. Wir sparen nicht an der Qualität; wir reduzieren Ineffizienzen."
+            },
+            "2": {
+                "question": "Was passiert, wenn ich mich anmelde und meine Meinung ändere?",
+                "answer": "Wir arbeiten in der Überzeugung, dass wir uns Ihr Geschäft jeden Tag neu verdienen müssen. Wenn Sie mit unserem Service nicht zu 100% zufrieden sind, können Sie Ihren Listing-Vertrag jederzeit, ohne Angabe von Gründen und ohne Strafen kündigen. Keine unangenehmen Gespräche erforderlich."
+            },
+            "3": {
+                "question": "Werde ich einen festen Makler haben oder werde ich weitergereicht?",
+                "answer": "Ihnen wird ein Lead Strategist zugewiesen, der Ihr einziger Ansprechpartner von der Bewertung bis zum Abschluss ist. Sie werden nicht an verschiedene Abteilungen weitergereicht. Sie haben dessen direkte Durchwahl."
+            }
+        }
+    },
+    "ContactCTA": {
+        "title": "Suchen Sie eine sofortige Bewertung?",
+        "description": "Überspringen Sie die Warteschlange. Nutzen Sie unsere proprietäre Preis-Engine, um in Sekundenschnelle eine geprüfte Schätzung Ihrer Londoner Immobilie zu erhalten.",
+        "button": "Kostenlose Bewertung erhalten"
+    },
+    "ExitIntentOffer": {
+        "playbookTitle": "Das Verkäufer-Playbook",
+        "playbookSubtitle": "Kostenloser PDF-Download",
+        "waitText": "Warten Sie, bevor Sie gehen!",
+        "headline": "5 Warnsignale, dass Ihr Makler Ihr Haus überbewertet",
+        "description": "Lassen Sie Ihr Haus nicht zu einem Ladenhüter werden. Laden Sie unser Insider-Playbook herunter, das die Warnsignale einer scheiternden Immobilienstrategie detailliert beschreibt.",
+        "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+        "buttonText": "Senden Sie mir das Playbook",
+        "privacy": "Wir respektieren Ihre Privatsphäre. Jederzeit abmeldbar.",
+        "successTitle": "Playbook gesendet!",
+        "successDesc": "Überprüfen Sie in wenigen Minuten Ihren Posteingang. Dieses Fenster wird geschlossen..."
+    }
+}

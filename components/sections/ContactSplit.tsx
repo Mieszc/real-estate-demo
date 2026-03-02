@@ -9,8 +9,10 @@ import { Card } from "@/components/ui/Card";
 import { AnimateInView } from "@/components/ui/AnimateInView";
 import { motion, AnimatePresence } from "framer-motion";
 import { MagneticWrapper } from "@/components/ui/MagneticWrapper";
+import { useTranslations } from 'next-intl';
 
 export function ContactSplit() {
+    const t = useTranslations('ContactSplit');
     const [formState, setFormState] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
     const handleSubmit = (e: React.FormEvent) => {
@@ -27,18 +29,18 @@ export function ContactSplit() {
     const contactOptions = [
         {
             icon: <Phone className="w-5 h-5 text-brand-amber" />,
-            title: "Call Us",
-            detail: "+44 (0) 20 7123 4567"
+            title: t('options.0.title'),
+            detail: t('options.0.detail')
         },
         {
             icon: <Mail className="w-5 h-5 text-brand-amber" />,
-            title: "Email",
-            detail: "hello@apexhorizon.com"
+            title: t('options.1.title'),
+            detail: t('options.1.detail')
         },
         {
             icon: <MapPin className="w-5 h-5 text-brand-amber" />,
-            title: "Office Menu",
-            detail: "1 Berkeley Square, Mayfair, London"
+            title: t('options.2.title'),
+            detail: t('options.2.detail')
         }
     ];
 
@@ -53,10 +55,10 @@ export function ContactSplit() {
                     <AnimateInView delay={0.1} direction="right" className="flex flex-col gap-8">
                         <div>
                             <Typography variant="h2" className="text-white mb-4">
-                                Let's Discuss Your <span className="text-brand-amber">Next Move.</span>
+                                {t('titlePart1')}<span className="text-brand-amber">{t('titlePart2')}</span>
                             </Typography>
                             <Typography variant="lead" className="text-brand-stone/70">
-                                Whether you're ready to list today or just want to understand the current London market, our Lead Strategists are standing by.
+                                {t('description')}
                             </Typography>
                         </div>
 
@@ -83,31 +85,31 @@ export function ContactSplit() {
                     <AnimateInView delay={0.3} direction="left" className="relative">
                         <Card className="bg-white/5 border-white/10 p-8 lg:p-10 shadow-2xl relative overflow-hidden">
                             <Typography variant="h3" className="text-white mb-8 border-b border-white/10 pb-4">
-                                Send a Message
+                                {t('form.title')}
                             </Typography>
 
                             <form onSubmit={handleSubmit} className="flex flex-col gap-6 relative z-10">
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                     <div className="flex flex-col gap-2">
-                                        <label className="text-sm font-medium text-brand-stone/80">First Name</label>
-                                        <Input placeholder="James" required disabled={formState !== 'idle'} />
+                                        <label className="text-sm font-medium text-brand-stone/80">{t('form.firstName.label')}</label>
+                                        <Input placeholder={t('form.firstName.placeholder')} required disabled={formState !== 'idle'} />
                                     </div>
                                     <div className="flex flex-col gap-2">
-                                        <label className="text-sm font-medium text-brand-stone/80">Last Name</label>
-                                        <Input placeholder="Bond" required disabled={formState !== 'idle'} />
+                                        <label className="text-sm font-medium text-brand-stone/80">{t('form.lastName.label')}</label>
+                                        <Input placeholder={t('form.lastName.placeholder')} required disabled={formState !== 'idle'} />
                                     </div>
                                 </div>
 
                                 <div className="flex flex-col gap-2">
-                                    <label className="text-sm font-medium text-brand-stone/80">Email Address</label>
-                                    <Input type="email" placeholder="james@example.com" required disabled={formState !== 'idle'} />
+                                    <label className="text-sm font-medium text-brand-stone/80">{t('form.email.label')}</label>
+                                    <Input type="email" placeholder={t('form.email.placeholder')} required disabled={formState !== 'idle'} />
                                 </div>
 
                                 <div className="flex flex-col gap-2">
-                                    <label className="text-sm font-medium text-brand-stone/80">How can we help?</label>
+                                    <label className="text-sm font-medium text-brand-stone/80">{t('form.message.label')}</label>
                                     <textarea
                                         className="flex min-h-[120px] w-full rounded-md border text-white border-white/10 bg-white/5 px-3 py-2 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-brand-stone/40 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-brand-amber disabled:cursor-not-allowed disabled:opacity-50"
-                                        placeholder="I want to value my property in Chelsea..."
+                                        placeholder={t('form.message.placeholder')}
                                         required
                                         disabled={formState !== 'idle'}
                                     />
@@ -120,7 +122,7 @@ export function ContactSplit() {
                                         className="w-full h-12"
                                         disabled={formState === 'loading' || formState === 'success'}
                                     >
-                                        {formState === 'loading' ? 'Sending...' : 'Send Message'}
+                                        {formState === 'loading' ? t('form.sending') : t('form.submit')}
                                         {formState === 'idle' && <Send className="ml-2 w-4 h-4" />}
                                     </Button>
                                 </MagneticWrapper>
@@ -138,9 +140,9 @@ export function ContactSplit() {
                                         <div className="w-16 h-16 rounded-full bg-green-500/20 flex items-center justify-center mb-6">
                                             <Send className="w-8 h-8 text-green-500" />
                                         </div>
-                                        <Typography variant="h3" className="text-white mb-2">Message Sent!</Typography>
+                                        <Typography variant="h3" className="text-white mb-2">{t('success.title')}</Typography>
                                         <Typography variant="p" className="text-brand-stone/80">
-                                            A Lead Strategist will contact you within 24 hours.
+                                            {t('success.description')}
                                         </Typography>
                                     </motion.div>
                                 )}

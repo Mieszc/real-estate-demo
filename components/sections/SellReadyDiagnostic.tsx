@@ -5,8 +5,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, CheckCircle2, ChevronRight, Calculator, Home, User, PaintRoller, TrendingUp, HandCoins, ShieldCheck, Clock } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Typography } from "@/components/ui/Typography";
+import { useTranslations } from "next-intl";
 
 export function SellReadyDiagnostic() {
+    const t = useTranslations("SellReadyDiagnostic");
     const [step, setStep] = useState(1);
 
     // Form state (simulated collection)
@@ -32,13 +34,13 @@ export function SellReadyDiagnostic() {
             <div className="container mx-auto px-4 max-w-4xl relative z-10">
                 <div className="text-center mb-16 space-y-4">
                     <span className="text-brand-amber font-bold tracking-widest uppercase text-sm">
-                        Pre-Launch Diagnostic
+                        {t('badge')}
                     </span>
                     <Typography variant="h2" className="text-white">
-                        Are You Ready for the Market?
+                        {t('title')}
                     </Typography>
                     <Typography variant="lead" className="text-slate-300 max-w-2xl mx-auto">
-                        Take our 30-second assessment. We'll diagnose your home's current market position and identify specific levers to maximize your final sale price.
+                        {t('description')}
                     </Typography>
                 </div>
 
@@ -46,7 +48,9 @@ export function SellReadyDiagnostic() {
 
                     {/* Progress Indicator */}
                     <div className="flex justify-between items-center mb-8">
-                        <span className="text-sm font-semibold text-slate-400">Step {step} of {step < 4 ? '3' : '4'}</span>
+                        <span className="text-sm font-semibold text-slate-400">
+                            {t('stepProgress', { step: step, total: step < 4 ? '3' : '4' })}
+                        </span>
                         <div className="flex gap-2">
                             {[1, 2, 3].map(i => (
                                 <div
@@ -71,14 +75,14 @@ export function SellReadyDiagnostic() {
                                 className="space-y-8"
                             >
                                 <Typography variant="h3" className="text-white text-center mb-8">
-                                    What is your primary goal for the sale?
+                                    {t('step1.question')}
                                 </Typography>
 
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                                     {[
-                                        { id: "speed", label: "Speed & Certainty", icon: ArrowRight, desc: "Sell fast, timeline is priority" },
-                                        { id: "price", label: "Maximum ROI", icon: TrendingUp, desc: "Willing to wait for highest offer" },
-                                        { id: "privacy", label: "Total Privacy", icon: ShieldCheck, desc: "Off-market, quiet transaction" }
+                                        { id: "speed", label: t('step1.options.speed.label'), icon: ArrowRight, desc: t('step1.options.speed.desc') },
+                                        { id: "price", label: t('step1.options.price.label'), icon: TrendingUp, desc: t('step1.options.price.desc') },
+                                        { id: "privacy", label: t('step1.options.privacy.label'), icon: ShieldCheck, desc: t('step1.options.privacy.desc') }
                                     ].map(option => (
                                         <button
                                             key={option.id}
@@ -107,14 +111,14 @@ export function SellReadyDiagnostic() {
                                 className="space-y-8"
                             >
                                 <Typography variant="h3" className="text-white text-center mb-8">
-                                    How much renovation work have you done in the last 2 years?
+                                    {t('step2.question')}
                                 </Typography>
 
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                                     {[
-                                        { id: "none", label: "Minimal / None", icon: Home, desc: "Needs a refresh" },
-                                        { id: "partial", label: "Partial Updates", icon: PaintRoller, desc: "Kitchen or baths done" },
-                                        { id: "full", label: "Full Remodel", icon: HandCoins, desc: "Turnkey ready, high-end" }
+                                        { id: "none", label: t('step2.options.none.label'), icon: Home, desc: t('step2.options.none.desc') },
+                                        { id: "partial", label: t('step2.options.partial.label'), icon: PaintRoller, desc: t('step2.options.partial.desc') },
+                                        { id: "full", label: t('step2.options.full.label'), icon: HandCoins, desc: t('step2.options.full.desc') }
                                     ].map(option => (
                                         <button
                                             key={option.id}
@@ -143,14 +147,14 @@ export function SellReadyDiagnostic() {
                                 className="space-y-8 max-w-2xl mx-auto"
                             >
                                 <Typography variant="h3" className="text-white text-center mb-8">
-                                    Are you currently listed with another broker?
+                                    {t('step3.question')}
                                 </Typography>
 
                                 <div className="flex flex-col gap-4">
                                     {[
-                                        { id: "no", label: "No, exploring my options", icon: CheckCircle2 },
-                                        { id: "yes_active", label: "Yes, currently active but unhappy", icon: User },
-                                        { id: "expired", label: "Listing recently expired/withdrawn", icon: Clock }
+                                        { id: "no", label: t('step3.options.no.label'), icon: CheckCircle2 },
+                                        { id: "yes_active", label: t('step3.options.yes_active.label'), icon: User },
+                                        { id: "expired", label: t('step3.options.expired.label'), icon: Clock }
                                     ].map(option => (
                                         <button
                                             key={option.id}
@@ -181,17 +185,21 @@ export function SellReadyDiagnostic() {
                                     <CheckCircle2 className="w-10 h-10 text-green-400" />
                                 </div>
                                 <Typography variant="h3" className="text-white">
-                                    Diagnostic Complete
+                                    {t('step4.title')}
                                 </Typography>
                                 <p className="text-slate-300 text-lg">
-                                    Based on your goal to optimize for <strong>{goal === 'price' ? 'maximum ROI' : goal === 'speed' ? 'speed' : 'privacy'}</strong> with <strong>{renovation === 'none' ? 'minimal' : renovation === 'partial' ? 'partial' : 'full'}</strong> recent renovations, you are in a strong position to leverage the Apex Strategy.
+                                    {t.rich('step4.resultText', {
+                                        goal: t(`step4.goals.${goal}` as any),
+                                        renovation: t(`step4.renovations.${renovation}` as any),
+                                        bold: (chunks) => <strong>{chunks}</strong>
+                                    })}
                                 </p>
                                 <div className="pt-4">
                                     <Button size="lg" className="bg-brand-amber text-brand-navy hover:bg-white w-full sm:w-auto font-bold px-8 py-6 rounded-full text-lg shadow-[0_0_20px_rgba(217,119,6,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)] transition-all">
-                                        Unlock Your Free Assessment
+                                        {t('step4.ctaButton')}
                                         <ChevronRight className="ml-2 w-5 h-5" />
                                     </Button>
-                                    <p className="text-slate-500 text-xs mt-4">No obligation. 100% confidential.</p>
+                                    <p className="text-slate-500 text-xs mt-4">{t('step4.ctaDisclaimer')}</p>
                                 </div>
                             </motion.div>
                         )}

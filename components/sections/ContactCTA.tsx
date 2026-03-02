@@ -4,8 +4,10 @@ import { Typography } from "@/components/ui/Typography";
 import { Button } from "@/components/ui/Button";
 import { AnimateInView } from "@/components/ui/AnimateInView";
 import { MagneticWrapper } from "@/components/ui/MagneticWrapper";
+import { useTranslations } from "next-intl";
 
 export function ContactCTA() {
+    const t = useTranslations("ContactCTA");
     return (
         <section className="w-full bg-brand-stone py-24 relative overflow-hidden border-t border-black/5">
             <div className="container mx-auto px-6 max-w-[1280px] relative z-10 text-center flex flex-col items-center">
@@ -17,10 +19,10 @@ export function ContactCTA() {
 
                         <div className="relative z-10 flex flex-col items-center">
                             <Typography variant="h2" className="text-white mb-6">
-                                Looking for an immediate valuation?
+                                {t('title')}
                             </Typography>
                             <Typography variant="lead" className="text-brand-stone/80 mb-10 max-w-2xl">
-                                Skip the line. Use our proprietary pricing engine to get an audited estimate of your London property in seconds.
+                                {t('description')}
                             </Typography>
 
                             <MagneticWrapper>
@@ -32,7 +34,7 @@ export function ContactCTA() {
                                         window.location.href = "/#hero-form";
                                     }}
                                 >
-                                    Get Free Valuation
+                                    {t('button')}
                                 </Button>
                             </MagneticWrapper>
                         </div>

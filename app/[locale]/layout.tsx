@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { Manrope, Playfair_Display } from "next/font/google";
 import { NoiseOverlay } from "@/components/ui/NoiseOverlay";
-import "./globals.css";
+import "@/app/globals.css";
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import { routing } from '@/i18n/routing';
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -21,31 +25,34 @@ export const metadata: Metadata = {
   description:
     "Proprietary market data meets local London expertise. Sell your home faster and for a higher price with Apex Horizon.",
   keywords: ["Real Estate", "London Broker", "Apex Horizon", "Home Valuation", "Flat Fee Broker"],
-  openGraph: {
-    title: "Apex Horizon Realty",
-    description: "Sell your home faster and for a higher price with Apex Horizon's local London expertise.",
-    url: "https://apexhorizon.com",
-    siteName: "Apex Horizon Realty",
-    locale: "en_GB",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Apex Horizon Realty | London's Premier Broker",
-    description: "Proprietary market data meets local London expertise.",
-  },
 };
 
-export default function RootLayout({
+export default async function LocaleLayout({
   children,
-}: Readonly<{
+  params
+}: {
   children: React.ReactNode;
-}>) {
+  params: Promise<{ locale: string }>;
+}) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
+
+  // Ensure that the incoming `locale` is valid
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
+
+  // Providing all messages to the client
+  // side is the easiest way to get started
+  const messages = await getMessages();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`${manrope.variable} ${playfair.variable} font-sans`}>
-        <NoiseOverlay />
-        {children}
+        <NextIntlClientProvider messages={messages}>
+          <NoiseOverlay />
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

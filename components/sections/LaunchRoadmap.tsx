@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { Search, Paintbrush, Rocket, Key } from "lucide-react";
 import { Typography } from "@/components/ui/Typography";
+import { useTranslations } from 'next-intl';
 
 const steps = [
     {
@@ -33,6 +34,7 @@ const steps = [
 ];
 
 export function LaunchRoadmap() {
+    const t = useTranslations('LaunchRoadmap');
     const containerRef = useRef<HTMLDivElement>(null);
 
     // Track scroll progress within the container
@@ -57,13 +59,13 @@ export function LaunchRoadmap() {
             <div className="container mx-auto px-4 max-w-4xl relative z-10">
                 <div className="text-center mb-24">
                     <span className="text-brand-amber font-bold tracking-widest uppercase text-sm mb-4 block">
-                        The Master Plan
+                        {t('tagline')}
                     </span>
                     <Typography variant="h2" className="mb-4 text-brand-ink">
-                        The Apex Launch Roadmap
+                        {t('title')}
                     </Typography>
                     <Typography variant="lead" className="text-brand-ink/80 max-w-2xl mx-auto">
-                        We don't just "list" homes. We orchestrate a high-impact product launch designed to maximize buyer competition.
+                        {t('description')}
                     </Typography>
                 </div>
 
@@ -96,6 +98,9 @@ export function LaunchRoadmap() {
                                     isEven={isEven}
                                     progress={smoothProgress}
                                     threshold={threshold}
+                                    label={t('stepLabel', { number: index + 1 })}
+                                    title={t(`steps.${index}.title`)}
+                                    description={t(`steps.${index}.description`)}
                                 />
                             );
                         })}
@@ -106,7 +111,7 @@ export function LaunchRoadmap() {
     );
 }
 
-function RoadmapStep({ step, index, isEven, progress, threshold }: any) {
+function RoadmapStep({ step, index, isEven, progress, threshold, label, title, description }: any) {
     // When progress passes this step's threshold, it becomes "active"
     const isActive = useTransform(progress, (p: number) => p >= (threshold - 0.1));
     const opacity = useTransform(progress, [threshold - 0.3, threshold - 0.1], [0.3, 1]);
@@ -146,13 +151,13 @@ function RoadmapStep({ step, index, isEven, progress, threshold }: any) {
 
                     <div className="relative z-10">
                         <span className="text-sm font-bold text-brand-ink/70 mb-2 block">
-                            Step 0{index + 1}
+                            {label}
                         </span>
                         <Typography variant="h3" className="mb-4 text-brand-ink font-serif">
-                            {step.title}
+                            {title}
                         </Typography>
                         <p className="text-brand-ink/80 leading-relaxed">
-                            {step.description}
+                            {description}
                         </p>
                     </div>
                 </div>
