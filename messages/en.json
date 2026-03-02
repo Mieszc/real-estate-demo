@@ -300,5 +300,15 @@
         "privacy": "We respect your privacy. Unsubscribe anytime.",
         "successTitle": "Playbook Sent!",
         "successDesc": "Check your inbox in a few minutes. Closing this window..."
+    },
+    "seo": {
+        "home": {
+            "title": "Sell Your Home Smarter & Net 12% More | Apex Horizon Realty",
+            "description": "Proprietary market data meets local London expertise. Sell your home faster and for a higher price with the Apex strategy. Get your free valuation today."
+        },
+        "contact": {
+            "title": "Contact Our Lead Strategists | Apex Horizon Realty",
+            "description": "Ready to discuss your next move in the London property market? Reach out to our expert team for a confidential consultation or property valuation."
+        }
     }
 }

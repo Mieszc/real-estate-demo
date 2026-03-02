@@ -20,12 +20,7 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Apex Horizon Realty | Sell Smarter, Net 12% More",
-  description:
-    "Proprietary market data meets local London expertise. Sell your home faster and for a higher price with Apex Horizon.",
-  keywords: ["Real Estate", "London Broker", "Apex Horizon", "Home Valuation", "Flat Fee Broker"],
-};
+// Metadata is now handled dynamically in page components via generateMetadata
 
 export default async function LocaleLayout({
   children,

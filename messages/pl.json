@@ -300,5 +300,15 @@
         "privacy": "Szanujemy Twoją prywatność. Zawsze możesz anulować subskrypcję.",
         "successTitle": "Poradnik wysłany!",
         "successDesc": "Sprawdź skrzynkę odbiorczą za kilka minut. To okno zostanie zamknięte..."
+    },
+    "seo": {
+        "home": {
+            "title": "Sprzedawaj dom mądrzej i zyskaj 12% więcej | Apex Horizon Realty",
+            "description": "Autorskie dane rynkowe w połączeniu z lokalną wiedzą o Londynie. Sprzedaj swój dom szybciej i drożej dzięki strategii Apex. Otrzymaj darmową wycenę już dziś."
+        },
+        "contact": {
+            "title": "Skontaktuj się z naszymi Głównymi Strategami | Apex Horizon Realty",
+            "description": "Gotowy na omówienie kolejnego kroku na londyńskim rynku nieruchomości? Skontaktuj się z naszym zespołem ekspertów w celu poufnej konsultacji lub wyceny nieruchomości."
+        }
     }
 }

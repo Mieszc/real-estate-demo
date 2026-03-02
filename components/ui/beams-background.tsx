@@ -141,7 +141,7 @@ export function BeamsBackground({
             if (!canvas || !ctx) return;
 
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            ctx.filter = "blur(35px)";
+            // Removed expensive ctx.filter = "blur(35px)"; which causes severe CPU bottleneck on every frame
 
             const totalBeams = beamsRef.current.length;
             beamsRef.current.forEach((beam, index) => {
@@ -179,7 +179,7 @@ export function BeamsBackground({
             <canvas
                 ref={canvasRef}
                 className="absolute inset-0"
-                style={{ filter: "blur(15px)" }}
+                style={{ filter: "blur(40px)", transform: "translateZ(0)" }} // Hardware accelerated CSS blur replaces canvas blur
             />
 
             <motion.div

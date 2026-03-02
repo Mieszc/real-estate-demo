@@ -300,5 +300,15 @@
         "privacy": "Wir respektieren Ihre Privatsphäre. Jederzeit abmeldbar.",
         "successTitle": "Leitfaden gesendet!",
         "successDesc": "Überprüfen Sie in wenigen Minuten Ihren Posteingang. Dieses Fenster wird geschlossen..."
+    },
+    "seo": {
+        "home": {
+            "title": "Verkaufen Sie Ihr Zuhause intelligenter & gewinnen Sie 12% mehr | Apex Horizon Realty",
+            "description": "Proprietäre Marktdaten treffen auf lokale Londoner Expertise. Verkaufen Sie Ihr Haus schneller und zu einem höheren Preis mit der Apex-Strategie. Holen Sie sich noch heute Ihre kostenlose Bewertung."
+        },
+        "contact": {
+            "title": "Kontaktieren Sie unsere Lead-Strategen | Apex Horizon Realty",
+            "description": "Bereit, Ihren nächsten Schritt auf dem Londoner Immobilienmarkt zu besprechen? Kontaktieren Sie unser Expertenteam für eine vertrauliche Beratung oder Immobilienbewertung."
+        }
     }
 }
