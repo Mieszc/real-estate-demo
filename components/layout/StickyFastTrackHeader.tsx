@@ -4,8 +4,10 @@ import { useState, useEffect } from "react";
 import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, Calculator } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export function StickyFastTrackHeader() {
+    const t = useTranslations('Navigation');
     const { scrollY, scrollYProgress } = useScroll();
     const [isVisible, setIsVisible] = useState(false);
 
@@ -15,6 +17,13 @@ export function StickyFastTrackHeader() {
         damping: 30,
         restDelta: 0.001
     });
+
+    const scrollToHero = () => {
+        const element = document.querySelector("#hero-form");
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     useEffect(() => {
         return scrollY.on("change", (latest) => {
@@ -53,14 +62,15 @@ export function StickyFastTrackHeader() {
 
                         <div className="flex items-center gap-4">
                             <span className="text-sm font-semibold text-slate-500 hidden md:inline-block border-r border-slate-200 pr-4">
-                                Ready to maximize your home's value?
+                                {t('stickyTitle')}
                             </span>
                             <Button
                                 size="sm"
                                 className="bg-brand-amber text-brand-navy hover:bg-brand-navy hover:text-white transition-colors group rounded-full px-6"
+                                onClick={scrollToHero}
                             >
                                 <Calculator className="w-4 h-4 mr-2" />
-                                <span className="font-bold">Get Valuation</span>
+                                <span className="font-bold">{t('stickyButton')}</span>
                                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                             </Button>
                         </div>

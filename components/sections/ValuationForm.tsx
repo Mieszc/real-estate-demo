@@ -5,10 +5,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Search, CheckCircle2, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
+import { useTranslations } from "next-intl";
 
 import { MagneticWrapper } from "@/components/ui/MagneticWrapper";
 
 export function ValuationForm() {
+    const t = useTranslations('Hero');
     const [address, setAddress] = useState("");
     const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
     const [message, setMessage] = useState("");
@@ -17,7 +19,7 @@ export function ValuationForm() {
         e.preventDefault();
         if (!address.trim()) {
             setStatus("error");
-            setMessage("Please enter a valid London address.");
+            setMessage(t('errorInvalid'));
             return;
         }
 
@@ -26,10 +28,10 @@ export function ValuationForm() {
         setTimeout(() => {
             if (address.toLowerCase().includes("fail")) {
                 setStatus("error");
-                setMessage("We couldn't verify this address. Please try again.");
+                setMessage(t('errorVerify'));
             } else {
                 setStatus("success");
-                setMessage("Success! Your dedicated Lead Strategist will contact you shortly.");
+                setMessage(t('successMessage'));
             }
 
             // Reset after 4 seconds
@@ -45,7 +47,7 @@ export function ValuationForm() {
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 w-full">
                 <Input
                     type="text"
-                    placeholder="Enter Your Home Address (e.g., Kensington High St)"
+                    placeholder={t('inputPlaceholder')}
                     value={address}
                     onChange={(e) => setAddress(e.target.value)}
                     disabled={status === "loading" || status === "success"}
@@ -60,7 +62,7 @@ export function ValuationForm() {
                         disabled={status === "loading" || status === "success"}
                         className="w-full"
                     >
-                        {status === "loading" ? "Analyzing..." : "Get My Valuation"}
+                        {status === "loading" ? t('buttonLoading') : t('buttonIdle')}
                     </Button>
                 </MagneticWrapper>
             </form>

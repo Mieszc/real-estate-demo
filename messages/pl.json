@@ -1,18 +1,26 @@
 {
     "Navigation": {
-        "howItWorks": "Jak to działa",
+        "howItWorks": "Proces sprzedaży",
         "ourGuarantee": "Nasza gwarancja",
         "successStories": "Historie sukcesu",
         "faq": "FAQ",
         "contact": "Kontakt",
-        "getValuation": "Uzyskaj wycenę",
-        "getMyValuation": "Uzyskaj moją wycenę"
+        "getValuation": "Ile wart jest mój dom?",
+        "getMyValuation": "Sprawdź wartość mojego domu",
+        "stickyTitle": "Chcesz zmaksymalizować wartość swojego domu?",
+        "stickyButton": "Ile wart jest mój dom?"
     },
     "Hero": {
         "titlePart1": "Sprzedawaj mądrzej z",
         "titlePart2": "Apex Horizon.",
-        "subtitle": "Łączymy własne dane rynkowe z lokalną wiedzą ekspertów w Londynie, aby zapewnić Ci 12% więcej zysku niż u przeciętnego pośrednika.",
-        "actionSubtext": "Jedyna czynność, którą musisz dziś wykonać."
+        "subtitle": "Korzystamy z ekskluzywnych lokalnych analiz i niestandardowych narzędzi wyceny, aby zapewnić Ci o 12% większy zysk niż u standardowych agentów.",
+        "actionSubtext": "Jedyna czynność, którą musisz dziś wykonać.",
+        "inputPlaceholder": "Wprowadź adres swojego domu (np. Kensington High St)",
+        "buttonIdle": "Sprawdź wartość mojego domu",
+        "buttonLoading": "Analizowanie...",
+        "errorInvalid": "Proszę podać prawidłowy adres w Londynie.",
+        "errorVerify": "Nie mogliśmy zweryfikować tego adresu. Proszę spróbować ponownie.",
+        "successMessage": "Sukces! Twój dedykowany Główny Strateg skontaktuje się z Tobą wkrótce."
     },
     "SectorSnapshot": {
         "trustedBy": "Zaufanie rodzin z całego regionu",
@@ -28,31 +36,31 @@
         "title": "Dlaczego konsekwentnie osiągamy lepsze wyniki",
         "description": "Przeciągnij suwak, aby porównać tradycyjną rzeczywistość rynkową ze standardem Apex Horizon. Czas to pieniądz w branży nieruchomości.",
         "traditional": {
-            "badge": "Tradycyjny Broker",
+            "badge": "Tradycyjny Pośrednik",
             "subtitle": "Przestarzałe i Powolne",
             "timeOnMarket": {
-                "label": "Czas na Rynku",
+                "label": "Dni do sprzedaży",
                 "value": "45+ Dni",
-                "detail": "Zaleganie na MLS, kumulowanie piętna \"Dni na Rynku\"."
+                "detail": "Zaleganie na portalach; kupujący zastanawiają się, co jest nie tak."
             },
             "salesPrice": {
-                "label": "Ostateczna Cena Sprzedaży",
-                "value": "96% Ceny Ofertowej",
-                "detail": "Konieczne obniżki cen, aby wzbudzić zainteresowanie kupujących."
+                "label": "Ostateczna wypłata",
+                "value": "96% Ceny",
+                "detail": "Konieczne obniżki cen, aby w ogóle znaleźć kupca."
             }
         },
         "apex": {
             "badge": "Strategia Apex",
             "subtitle": "Szybko i Zyskownie",
             "timeOnMarket": {
-                "label": "Czas na Rynku",
+                "label": "Dni do sprzedaży",
                 "value": "7 Dni",
-                "detail": "Zainteresowanie przed rynkiem, prowadzące do wielu ofert w weekend otwarcia."
+                "detail": "Wielu kupujących rywalizuje o dom już od pierwszego dnia."
             },
             "salesPrice": {
-                "label": "Ostateczna Cena Sprzedaży",
-                "value": "104% Ceny Ofertowej",
-                "detail": "Wojny licytacyjne wywołane perfekcyjną prezentacją i pozycjonowaniem."
+                "label": "Ostateczna wypłata",
+                "value": "104% Ceny",
+                "detail": "Perfekcyjne pierwsze wrażenie."
             }
         },
         "mobileInstruction": "Przesuń w lewo i prawo, aby porównać"
@@ -60,24 +68,24 @@
     "LaunchRoadmap": {
         "tagline": "Master Plan",
         "title": "Harmonogram wprowadzania na rynek Apex",
-        "description": "Nie tylko \"wystawiamy\" domy. Organizujemy potężną premierę produktu na rynku, zaprojektowaną tak, aby maksymalnie zwiększyć konkurencję wśród kupujących.",
+        "description": "Nie tylko wrzucamy zdjęcia i czekamy. Wprowadzamy Twój dom na rynek jak nowy produkt, aby przyciągnąć uwagę każdego kupującego.",
         "stepLabel": "Krok {number}",
         "steps": {
             "0": {
-                "title": "Analiza rynku",
-                "description": "Dogłębna eksploracja danych w celu znalezienia prawdziwej przewagi konkurencyjnej Twojego domu. My nie zgadujemy; my obliczamy optymalny punkt wejścia."
+                "title": "Analiza ceny",
+                "description": "Sprawdzamy każdy podobny dom w okolicy, aby znaleźć idealną cenę, która wywoła wojnę ofert."
             },
             "1": {
-                "title": "Staging i Przygotowanie",
-                "description": "Nasz wewnętrzny zespół projektantów aranżuje Twój dom, aby wywołać maksymalne reakcje emocjonalne u luksusowych nabywców."
+                "title": "Metamorfoza domu",
+                "description": "Nasi projektanci przygotują Twoje wnętrza tak, aby kupujący zakochali się od pierwszego wejrzenia."
             },
             "2": {
-                "title": "Premiera cyfrowa",
-                "description": "Kinematograficzne wycieczki wideo, ukierunkowane reklamy społecznościowe i ekskluzywne zapowiedzi pozarynkowe, aby zbudować silne oczekiwanie."
+                "title": "Dostęp dla wybranych",
+                "description": "Pokazujemy Twój dom naszej prywatnej liście kupujących, zanim trafi do publicznej oferty."
             },
             "3": {
-                "title": "Sprzedane i Zamknięte",
-                "description": "Eksperckie negocjacje w celu zabezpieczenia warunków chroniących Twój majątek, zamykając transakcję sprawnie i bezproblemowo."
+                "title": "Finalny uścisk dłoni",
+                "description": "Negocjujemy najwyższą cenę i zajmujemy się formalnościami, zapewniając Ci bezstresową przeprowadzkę."
             }
         }
     },
@@ -151,27 +159,27 @@
         "studies": {
             "0": {
                 "metric": "5 dni",
-                "metricLabel": "Czas na rynku",
-                "result": "30 000 USD powyżej ceny katalogowej za dom z 3 sypialniami w Oakwood District.",
+                "metricLabel": "Sprzedane w...",
+                "result": "30 000 USD powyżej ceny wywoławczej za dom w Oakwood District.",
                 "highlight": "Wiele ofert"
             },
             "1": {
                 "metric": "108%",
-                "metricLabel": "Stosunek ceny wywoławczej do ceny sprzedaży",
+                "metricLabel": "Powyżej ceny ofertowej.",
                 "result": "Sprzedane poza rynkiem, bez ani jednego publicznego dnia otwartego.",
-                "highlight": "Całkowita prywatność"
+                "highlight": "Pełna prywatność"
             },
             "2": {
                 "metric": "1,2 mln USD",
-                "metricLabel": "Ostateczne zamknięcie",
+                "metricLabel": "Ostateczna cena",
                 "result": "Pobito rekord okolicy o 150 000 USD.",
                 "highlight": "Bicie rekordów"
             },
             "3": {
                 "metric": "0 dni",
-                "metricLabel": "Zależność",
-                "result": "Kupujący za gotówkę zabezpieczony przed zakończeniem przygotowań (staging).",
-                "highlight": "Zero stresu"
+                "metricLabel": "Warunki",
+                "result": "Pewna, gwarantowana umowa od momentu podpisania przez kupującego.",
+                "highlight": "Bez 'co jeśli'."
             }
         }
     },
@@ -221,7 +229,7 @@
                     "label": "Nie, badam swoje opcje"
                 },
                 "yes_active": {
-                    "label": "Tak, obecnie aktywnie, ale niezadowolony"
+                    "label": "Yes, obecnie aktywnie, ale niezadowolony"
                 },
                 "expired": {
                     "label": "Oferta niedawno wygasła / została wycofana"
@@ -282,15 +290,15 @@
         "button": "Zdobądź darmową wycenę"
     },
     "ExitIntentOffer": {
-        "playbookTitle": "Poradnik Sprzedawcy",
-        "playbookSubtitle": "Darmowe pobieranie PDF",
-        "waitText": "Poczekaj, zanim wyjdziesz!",
-        "headline": "5 czerwonych flag, że Twój agent zawyża cenę Twojego domu",
-        "description": "Nie pozwól, aby Twój dom stał się nieaktualną ofertą. Pobierz nasz poradnik dla wtajemniczonych, w którym szczegółowo opisano sygnały ostrzegawcze nieskutecznej strategii nieruchomości.",
+        "playbookTitle": "Niezbędnik Sprzedającego Dom.",
+        "playbookSubtitle": "Darmowy PDF do pobrania",
+        "waitText": "Zaczekaj, zanim wyjdziesz!",
+        "headline": "5 sygnałów, że Twój dom może zbyt długo zalegać na rynku.",
+        "description": "Nie pozwól, aby Twoja oferta stała się nieaktualna. Pobierz nasz poradnik, w którym opisujemy sygnały ostrzegawcze nieskutecznej strategii sprzedaży.",
         "emailPlaceholder": "Wprowadź swój adres e-mail",
         "buttonText": "Wyślij mi poradnik",
         "privacy": "Szanujemy Twoją prywatność. Zawsze możesz anulować subskrypcję.",
         "successTitle": "Poradnik wysłany!",
-        "successDesc": "Sprawdź swoją skrzynkę odbiorczą za kilka minut. Zamykanie tego okna..."
+        "successDesc": "Sprawdź skrzynkę odbiorczą za kilka minut. To okno zostanie zamknięte..."
     }
 }

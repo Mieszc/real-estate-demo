@@ -97,7 +97,7 @@ export function ExitIntentOffer() {
                                     <span className="text-red-500 font-bold tracking-widest uppercase text-xs mb-3 block">
                                         {t('waitText')}
                                     </span>
-                                    <Typography variant="h3" className="text-brand-navy mb-4 leading-tight font-serif min-h-[60px]">
+                                    <Typography variant="h3" className="text-black mb-4 leading-tight font-serif min-h-[60px]">
                                         {t('headline')}
                                     </Typography>
                                     <p className="text-slate-600 mb-6 text-sm">

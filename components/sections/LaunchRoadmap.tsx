@@ -50,7 +50,7 @@ export function LaunchRoadmap() {
     });
 
     return (
-        <section className="py-32 bg-slate-50 overflow-hidden relative" ref={containerRef}>
+        <section id="how-it-works" className="py-32 bg-slate-50 overflow-hidden relative" ref={containerRef}>
             {/* Background Texture */}
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
                 style={{ backgroundImage: 'radial-gradient(#000 1px, transparent 1px)', backgroundSize: '24px 24px' }}

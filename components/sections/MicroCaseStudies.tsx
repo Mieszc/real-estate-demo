@@ -39,7 +39,7 @@ export function MicroCaseStudies() {
         }
     ];
     return (
-        <section className="py-24 bg-white">
+        <section id="success-stories" className="py-24 bg-white">
             <div className="container mx-auto px-4 max-w-6xl">
                 <div className="text-center mb-16">
                     <span className="text-brand-amber font-bold tracking-widest uppercase text-sm mb-4 block">

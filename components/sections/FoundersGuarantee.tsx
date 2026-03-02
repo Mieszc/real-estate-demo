@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 export function FoundersGuarantee() {
     const t = useTranslations("FoundersGuarantee");
     return (
-        <section className="py-24 bg-brand-navy text-white relative overflow-hidden">
+        <section id="guarantee" className="py-24 bg-brand-navy text-white relative overflow-hidden">
             {/* Elegant Background Texture */}
             <div className="absolute inset-0 opacity-[0.02]"
                 style={{ backgroundImage: 'radial-gradient(#fff 2px, transparent 2px)', backgroundSize: '32px 32px' }}

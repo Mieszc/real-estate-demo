@@ -15,9 +15,9 @@ export function Navigation() {
     const t = useTranslations('Navigation');
 
     const NAV_LINKS = [
-        { name: t('howItWorks'), href: "/#process" },
+        { name: t('howItWorks'), href: "/#how-it-works" },
         { name: t('ourGuarantee'), href: "/#guarantee" },
-        { name: t('successStories'), href: "/#success" },
+        { name: t('successStories'), href: "/#success-stories" },
         { name: t('faq'), href: "/#faq" },
         { name: t('contact'), href: "/contact" },
     ];
@@ -84,8 +84,8 @@ export function Navigation() {
                                 href={link.href}
                                 onClick={(e) => handleNavClick(e, link.href)}
                                 className={`text-sm font-medium transition-colors duration-300 ${isScrolled
-                                    ? "text-black/70 hover:text-black"
-                                    : "text-white/80 hover:text-white"}`}
+                                    ? "text-black hover:text-brand-amber"
+                                    : "text-white hover:text-brand-amber"}`}
                             >
                                 {link.name}
                             </Link>

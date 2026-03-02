@@ -3,7 +3,6 @@ import { Navigation } from "@/components/sections/Navigation";
 import { Hero } from "@/components/sections/Hero";
 import { SectorSnapshot } from "@/components/sections/SectorSnapshot";
 import { StackedCircularFooter } from "@/components/ui/stacked-circular-footer";
-import { StickyFastTrackHeader } from "@/components/layout/StickyFastTrackHeader";
 
 // Lazy-loaded interactive & below-the-fold components
 const ListingSpeedSlider = dynamic(() => import("@/components/ui/ListingSpeedSlider").then(m => m.ListingSpeedSlider));
@@ -20,7 +19,6 @@ export default function Home() {
   return (
     <>
       <Navigation />
-      <StickyFastTrackHeader />
       <ExitIntentOffer />
       <main className="w-full min-h-screen bg-brand-ink selection:bg-brand-amber selection:text-brand-ink overflow-x-hidden pt-[80px]">
         <Hero />

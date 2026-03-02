@@ -5,7 +5,11 @@ import { Label } from "@/components/ui/Label"
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
 import { MagneticWrapper } from "@/components/ui/MagneticWrapper"
 
+import { useTranslations } from "next-intl"
+import { Link } from "@/i18n/routing"
+
 function StackedCircularFooter() {
+    const t = useTranslations('Navigation');
     return (
         <footer className="w-full bg-brand-ink py-24 border-t border-white/10 relative overflow-hidden">
             {/* Background glow injected for brand consistency */}
@@ -18,11 +22,11 @@ function StackedCircularFooter() {
                     </div>
 
                     <nav className="mb-12 flex flex-wrap justify-center gap-6">
-                        <a href="/#process" className="text-brand-stone/80 hover:text-white transition-colors font-medium">How it Works</a>
-                        <a href="/#guarantee" className="text-brand-stone/80 hover:text-white transition-colors font-medium">Our Guarantee</a>
-                        <a href="/#success" className="text-brand-stone/80 hover:text-white transition-colors font-medium">Success Stories</a>
-                        <a href="/#faq" className="text-brand-stone/80 hover:text-white transition-colors font-medium">FAQ</a>
-                        <a href="/contact" className="text-brand-stone/80 hover:text-white transition-colors font-medium">Contact</a>
+                        <a href="/#how-it-works" className="text-brand-stone/80 hover:text-white transition-colors font-medium">{t('howItWorks')}</a>
+                        <a href="/#guarantee" className="text-brand-stone/80 hover:text-white transition-colors font-medium">{t('ourGuarantee')}</a>
+                        <a href="/#success-stories" className="text-brand-stone/80 hover:text-white transition-colors font-medium">{t('successStories')}</a>
+                        <a href="/#faq" className="text-brand-stone/80 hover:text-white transition-colors font-medium">{t('faq')}</a>
+                        <Link href="/contact" className="text-brand-stone/80 hover:text-white transition-colors font-medium">{t('contact')}</Link>
                     </nav>
 
                     <div className="mb-12 flex space-x-4">

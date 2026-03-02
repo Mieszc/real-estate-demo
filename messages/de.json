@@ -1,18 +1,26 @@
 {
     "Navigation": {
-        "howItWorks": "Wie es funktioniert",
+        "howItWorks": "Der Verkaufsprozess",
         "ourGuarantee": "Unsere Garantie",
         "successStories": "Erfolgsgeschichten",
         "faq": "FAQ",
         "contact": "Kontakt",
-        "getValuation": "Bewertung anfordern",
-        "getMyValuation": "Meine Bewertung anfordern"
+        "getValuation": "Bewertung erhalten",
+        "getMyValuation": "Meine Bewertung",
+        "stickyTitle": "Bereit, den Wert Ihres Zuhauses zu maximieren?",
+        "stickyButton": "Bewertung erhalten"
     },
     "Hero": {
         "titlePart1": "Intelligenter verkaufen mit",
         "titlePart2": "Apex Horizon.",
-        "subtitle": "Wir kombinieren proprietäre Marktdaten mit lokaler Londoner Expertise, um für Sie 12% mehr als der durchschnittliche Makler zu erzielen.",
-        "actionSubtext": "Die einzige Aktion, die Sie heute unternehmen müssen."
+        "subtitle": "Wir nutzen exklusive lokale Einblicke und maßgeschneiderte Preis-Tools, um für Sie 12% mehr Gewinn als herkömmliche Makler zu erzielen.",
+        "actionSubtext": "Die einzige Aktion, die Sie heute unternehmen müssen.",
+        "inputPlaceholder": "Geben Sie Ihre Privatadresse ein (z. B. Kensington High St)",
+        "buttonIdle": "Meine Bewertung anfordern",
+        "buttonLoading": "Analysiere...",
+        "errorInvalid": "Bitte geben Sie eine gültige Londoner Adresse ein.",
+        "errorVerify": "Wir konnten diese Adresse nicht verifizieren. Bitte versuchen Sie es erneut.",
+        "successMessage": "Erfolg! Ihr persönlicher Stratege wird Sie in Kürze kontaktieren."
     },
     "SectorSnapshot": {
         "trustedBy": "Von Familien in der gesamten Region vertraut",
@@ -31,28 +39,28 @@
             "badge": "Traditioneller Makler",
             "subtitle": "Abgestanden & Langsam",
             "timeOnMarket": {
-                "label": "Zeit auf dem Markt",
+                "label": "Tage bis zum Verkauf",
                 "value": "45+ Tage",
-                "detail": "Sitzt auf MLS, sammelt das Stigma der \"Tage auf dem Markt\"."
+                "detail": "Sitzt auf öffentlichen Portalen; Käufer fragen sich, was nicht stimmt."
             },
             "salesPrice": {
-                "label": "Endgültiger Verkaufspreis",
+                "label": "Endgültige Auszahlung",
                 "value": "96% der Forderung",
-                "detail": "Preissenkungen erforderlich, um das Interesse der Käufer zu wecken."
+                "detail": "Preissenkungen nötig, um überhaupt Käufer zu finden."
             }
         },
         "apex": {
             "badge": "Die Apex Strategie",
             "subtitle": "Schnell & Profitabel",
             "timeOnMarket": {
-                "label": "Zeit auf dem Markt",
+                "label": "Tage bis zum Verkauf",
                 "value": "7 Tage",
-                "detail": "Vorab-Markthype führt zu Mehrfachangeboten am Eröffnungswochenende."
+                "detail": "Mehrere Käufer konkurrieren bereits am ersten Tag."
             },
             "salesPrice": {
-                "label": "Endgültiger Verkaufspreis",
+                "label": "Endgültige Auszahlung",
                 "value": "104% der Forderung",
-                "detail": "Bieterkämpfe, die durch perfekte Präsentation und Positionierung erzeugt werden."
+                "detail": "Der perfekte erste Eindruck."
             }
         },
         "mobileInstruction": "Wischen Sie nach links und rechts, um zu vergleichen"
@@ -60,24 +68,24 @@
     "LaunchRoadmap": {
         "tagline": "Der Masterplan",
         "title": "Die Apex-Einführungs-Roadmap",
-        "description": "Wir \"listen\" nicht nur Häuser auf. Wir inszenieren eine wirkungsvolle Produkteinführung, die darauf ausgelegt ist, den Käuferwettbewerb zu maximieren.",
+        "description": "Wir laden nicht nur Fotos hoch und warten. Wir bringen Ihr Haus wie ein neues Produkt auf den Markt, damit jeder Käufer aufmerksam wird.",
         "stepLabel": "Schritt {number}",
         "steps": {
             "0": {
-                "title": "Marktanalyse",
-                "description": "Eingehendes Data Mining, um den wahren Wettbewerbsvorteil Ihres Hauses zu finden. Wir raten nicht; wir berechnen den optimalen Einstiegspunkt."
+                "title": "Preis-Recherche",
+                "description": "Wir analysieren jedes ähnliche Haus in der Nähe, um den exakten Preis zu finden, der einen Bieterstreit auslöst."
             },
             "1": {
-                "title": "Inszenierung & Vorbereitung",
-                "description": "Unser hauseigenes Designteam stylt Ihr Zuhause, um bei Luxuskäufern maximale emotionale Reaktionen hervorzurufen."
+                "title": "Der Haus-Check",
+                "description": "Unsere Designer bereiten Ihre Räume so vor, dass sich Käufer sofort verlieben."
             },
             "2": {
-                "title": "Digitale Einführung",
-                "description": "Kinoreife Videotouren, zielgerichtete Social-Media-Anzeigen und exklusive Off-Market-Vorschauen, um starke Vorfreude zu wecken."
+                "title": "Vorsprung für Insider",
+                "description": "Wir zeigen Ihr Haus unserer privaten Käuferliste, bevor es überhaupt öffentlich wird."
             },
             "3": {
-                "title": "Verkauft & Abgeschlossen",
-                "description": "Expertenverhandlungen, um Bedingungen zu sichern, die Ihr Vermögen schützen und die Transaktion reibungslos und geräuschlos abschließen."
+                "title": "Der finale Handschlag",
+                "description": "Wir verhandeln den Höchstpreis und erledigen den gesamten Papierkram für einen stressfreien Umzug."
             }
         }
     },
@@ -151,27 +159,27 @@
         "studies": {
             "0": {
                 "metric": "5 Tage",
-                "metricLabel": "Zeit auf dem Markt",
-                "result": "30.000 $ über dem Listenpreis für ein 3-Bett-Zimmer im Oakwood District.",
-                "highlight": "Mehrteilige Angebote"
+                "metricLabel": "Verkauft in...",
+                "result": "30.000 $ über dem Listenpreis für ein 3-Zimmer-Haus im Oakwood District.",
+                "highlight": "Mehrfachangebote"
             },
             "1": {
                 "metric": "108%",
-                "metricLabel": "Verhältnis von Anfrage zu Verkauf",
-                "result": "Auff market verkauft, ohne ein einziges öffentliches Open House.",
+                "metricLabel": "Über dem Wunschpreis.",
+                "result": "Diskret verkauft, ohne eine einzige öffentliche Besichtigung.",
                 "highlight": "Absolute Privatsphäre"
             },
             "2": {
                 "metric": "1,2 Mio. $",
-                "metricLabel": "Endgültiger Abschluss",
-                "result": "Die Nachbarschaftsobergrenze um 150.000 $ gesprengt.",
+                "metricLabel": "Finaler Abschluss",
+                "result": "Den Nachbarschafts-Rekord um 150.000 $ übertroffen.",
                 "highlight": "Rekordverdächtig"
             },
             "3": {
                 "metric": "0 Tage",
-                "metricLabel": "Kontingenz",
-                "result": "All-Cash-Käufer gesichert, bevor die Inszenierung abgeschlossen war.",
-                "highlight": "Null Stress"
+                "metricLabel": "Bedingungen",
+                "result": "Ein fester, garantierter Deal ab dem Moment der Unterschrift.",
+                "highlight": "Kein 'Was-wäre-wenn'."
             }
         }
     },
@@ -282,15 +290,15 @@
         "button": "Kostenlose Bewertung erhalten"
     },
     "ExitIntentOffer": {
-        "playbookTitle": "Das Verkäufer-Playbook",
+        "playbookTitle": "Der Kurz-Leitfaden für Eigentümer.",
         "playbookSubtitle": "Kostenloser PDF-Download",
         "waitText": "Warten Sie, bevor Sie gehen!",
-        "headline": "5 Warnsignale, dass Ihr Makler Ihr Haus überbewertet",
-        "description": "Lassen Sie Ihr Haus nicht zu einem Ladenhüter werden. Laden Sie unser Insider-Playbook herunter, das die Warnsignale einer scheiternden Immobilienstrategie detailliert beschreibt.",
+        "headline": "5 Anzeichen, dass Ihr Haus zu lange am Markt bleiben könnte.",
+        "description": "Lassen Sie Ihr Haus nicht zu einem Ladenhüter werden. Laden Sie unseren Insider-Leitfaden herunter, der die Warnsignale einer scheiternden Immobilienstrategie aufzeigt.",
         "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
-        "buttonText": "Senden Sie mir das Playbook",
+        "buttonText": "Senden Sie mir den Leitfaden",
         "privacy": "Wir respektieren Ihre Privatsphäre. Jederzeit abmeldbar.",
-        "successTitle": "Playbook gesendet!",
+        "successTitle": "Leitfaden gesendet!",
         "successDesc": "Überprüfen Sie in wenigen Minuten Ihren Posteingang. Dieses Fenster wird geschlossen..."
     }
 }
