@@ -309,6 +309,40 @@
         "contact": {
             "title": "Contact Our Lead Strategists | Apex Horizon Realty",
             "description": "Ready to discuss your next move in the London property market? Reach out to our expert team for a confidential consultation or property valuation."
+        },
+        "valuation": {
+            "title": "Free Instant Home Valuation | Apex Horizon Realty",
+            "description": "Find out exactly how much your home is worth today. No jargon, just real numbers. Get your free, no-obligation valuation in seconds."
         }
+    },
+    "ValuationPage": {
+        "titlePart1": "Find out what your home is ",
+        "titlePart2": "really worth.",
+        "subtitle": "Stop guessing. Use our tool to get a clear, realistic estimate of your home's value based on today's market—completely free, with no complicated real estate jargon.",
+        "actionSubtext": "It takes less than a minute.",
+        "formSectionTitle": "Your Free Valuation",
+        "formSectionDescription": "Enter your address below to get started. We'll show you exactly where you stand."
+    },
+    "ValuationForm": {
+        "addressLabel": "Property Address / Postcode",
+        "addressPlaceholder": "Enter your address",
+        "propertyTypeLabel": "Property Type",
+        "propertyTypeHouse": "House",
+        "propertyTypeFlat": "Flat / Apartment",
+        "propertyTypeOther": "Other",
+        "bedroomsLabel": "Bedrooms",
+        "firstNameLabel": "First Name",
+        "firstNamePlaceholder": "James",
+        "lastNameLabel": "Last Name",
+        "lastNamePlaceholder": "Bond",
+        "emailLabel": "Email Address",
+        "emailPlaceholder": "james@example.com",
+        "phoneLabel": "Phone Number (Optional)",
+        "phonePlaceholder": "+44 7000 000000",
+        "submitButton": "Send My Free Valuation",
+        "submittingButton": "Sending Valuation...",
+        "successMessage": "Success! We've sent your valuation report to your email.",
+        "errorInvalid": "Please fill out all required fields.",
+        "errorVerify": "We couldn't verify this information. Please try again."
     }
 }

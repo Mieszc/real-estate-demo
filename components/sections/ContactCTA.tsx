@@ -31,7 +31,7 @@ export function ContactCTA() {
                                     size="lg"
                                     className="shadow-[0_0_30px_rgba(255,184,0,0.3)] hover:shadow-[0_0_50px_rgba(255,184,0,0.5)] transition-shadow duration-300"
                                     onClick={() => {
-                                        window.location.href = "/#hero-form";
+                                        window.location.href = "/valuation";
                                     }}
                                 >
                                     {t('button')}

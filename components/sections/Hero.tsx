@@ -1,5 +1,7 @@
 import { Typography } from "@/components/ui/Typography";
-import { ValuationForm } from "@/components/sections/ValuationForm";
+import { Link } from "@/i18n/routing";
+import { Button } from "@/components/ui/Button";
+import { MagneticWrapper } from "@/components/ui/MagneticWrapper";
 import { AnimateInView } from "@/components/ui/AnimateInView";
 import { BeamsBackground } from "@/components/ui/beams-background";
 import { useTranslations } from 'next-intl';
@@ -26,7 +28,17 @@ export function Hero() {
                                 {t('subtitle')}
                             </Typography>
 
-                            <ValuationForm />
+                            <Link href="/valuation" className="inline-block w-full sm:w-auto">
+                                <MagneticWrapper>
+                                    <Button
+                                        variant="amber"
+                                        size="lg"
+                                        className="w-full sm:w-auto font-semibold px-8"
+                                    >
+                                        {t('buttonIdle')}
+                                    </Button>
+                                </MagneticWrapper>
+                            </Link>
 
                             <p className="mt-8 text-xs text-brand-stone/40 uppercase tracking-wider font-semibold">
                                 {t('actionSubtext')}

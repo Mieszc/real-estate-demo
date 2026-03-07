@@ -2,6 +2,7 @@ import { ShieldCheck, FileSignature } from "lucide-react";
 import { Typography } from "@/components/ui/Typography";
 import { Button } from "@/components/ui/Button";
 import { useTranslations } from "next-intl";
+import { Link } from '@/i18n/routing';
 
 export function FoundersGuarantee() {
     const t = useTranslations("FoundersGuarantee");
@@ -47,12 +48,14 @@ export function FoundersGuarantee() {
                                     <h4 className="font-serif text-2xl italic text-slate-400">{t('founder')}</h4>
                                     <p className="text-sm font-semibold text-brand-amber tracking-wider uppercase">{t('role')}</p>
                                 </div>
-                                <Button
-                                    className="bg-white text-brand-navy hover:bg-slate-100 hover:scale-105 transition-all w-full sm:w-auto px-8"
-                                    size="lg"
-                                >
-                                    {t('cta')}
-                                </Button>
+                                <Link href="/valuation" className="w-full sm:w-auto">
+                                    <Button
+                                        className="bg-[#CCFF00] text-black hover:bg-[#b8e600] hover:scale-105 transition-all w-full px-8 font-bold shadow-[0_0_20px_rgba(204,255,0,0.3)]"
+                                        size="lg"
+                                    >
+                                        {t('cta')}
+                                    </Button>
+                                </Link>
                                 <div className="text-center md:hidden block">
                                     <h4 className="font-serif text-xl italic text-slate-400">{t('founder')}</h4>
                                     <p className="text-xs font-semibold text-brand-amber tracking-wider uppercase">{t('role')}</p>

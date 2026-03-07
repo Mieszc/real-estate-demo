@@ -6,6 +6,7 @@ import { Hero } from "@/components/sections/Hero";
 import { SectorSnapshot } from "@/components/sections/SectorSnapshot";
 import { StackedCircularFooter } from "@/components/ui/stacked-circular-footer";
 import { OrganizationSchema } from "@/components/schema/OrganizationSchema";
+import { FAQSchema } from "@/components/schema/FAQSchema";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -38,7 +39,18 @@ const FAQ = dynamic(() => import("@/components/sections/FAQ").then(m => m.FAQ));
 const ContactCTA = dynamic(() => import("@/components/sections/ContactCTA").then(m => m.ContactCTA));
 const ExitIntentOffer = dynamic(() => import("@/components/ui/ExitIntentOffer").then(m => m.ExitIntentOffer));
 
-export default function Home() {
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const tFaq = await getTranslations({ locale, namespace: 'FAQ.items' });
+
+  // Currently we use indices 0 to 3 based on FAQ.tsx
+  const faqItems = [
+    { question: tFaq('0.question'), answer: tFaq('0.answer') },
+    { question: tFaq('1.question'), answer: tFaq('1.answer') },
+    { question: tFaq('2.question'), answer: tFaq('2.answer') },
+    { question: tFaq('3.question'), answer: tFaq('3.answer') },
+  ];
+
   return (
     <>
       <OrganizationSchema
@@ -47,6 +59,7 @@ export default function Home() {
         url="https://apexhorizon.com"
         areaServed="London"
       />
+      <FAQSchema items={faqItems} />
       <Navigation />
       <ExitIntentOffer />
       <main className="w-full min-h-screen bg-brand-ink selection:bg-brand-amber selection:text-brand-ink overflow-x-hidden pt-[80px]">

@@ -56,6 +56,11 @@ export function Navigation() {
         }
     };
 
+    const navigateToValuation = () => {
+        setMobileMenuOpen(false);
+        router.push('/valuation');
+    };
+
     return (
         <>
             <motion.nav
@@ -95,14 +100,7 @@ export function Navigation() {
                             <Button
                                 variant={isScrolled ? "ink" : "amber"}
                                 size="sm"
-                                onClick={() => {
-                                    if (pathname !== '/') {
-                                        router.push('/#hero-form');
-                                    } else {
-                                        const element = document.querySelector("#hero-form");
-                                        if (element) element.scrollIntoView({ behavior: "smooth" });
-                                    }
-                                }}
+                                onClick={navigateToValuation}
                             >
                                 {t('getValuation')}
                             </Button>
@@ -145,15 +143,7 @@ export function Navigation() {
                                 <Button
                                     variant="amber"
                                     className="w-full"
-                                    onClick={() => {
-                                        setMobileMenuOpen(false);
-                                        if (pathname !== '/') {
-                                            router.push('/#hero-form');
-                                        } else {
-                                            const element = document.querySelector("#hero-form");
-                                            if (element) element.scrollIntoView({ behavior: "smooth" });
-                                        }
-                                    }}
+                                    onClick={navigateToValuation}
                                 >
                                     {t('getMyValuation')}
                                 </Button>

@@ -309,6 +309,40 @@
         "contact": {
             "title": "Kontaktieren Sie unsere Lead-Strategen | Apex Horizon Realty",
             "description": "Bereit, Ihren nächsten Schritt auf dem Londoner Immobilienmarkt zu besprechen? Kontaktieren Sie unser Expertenteam für eine vertrauliche Beratung oder Immobilienbewertung."
+        },
+        "valuation": {
+            "title": "Kostenlose sofortige Immobilienbewertung | Apex Horizon Realty",
+            "description": "Finden Sie heraus, wie viel Ihr Haus heute wirklich wert ist. Kein Fachjargon, nur echte Zahlen. Holen Sie sich Ihre kostenlose und unverbindliche Bewertung in Sekunden."
         }
+    },
+    "ValuationPage": {
+        "titlePart1": "Finden Sie heraus, was Ihr Zuhause ",
+        "titlePart2": "wirklich wert ist.",
+        "subtitle": "Hören Sie auf zu raten. Nutzen Sie unser Tool, um eine klare, realistische Schätzung des Wertes Ihres Hauses basierend auf dem heutigen Markt zu erhalten – völlig kostenlos und ohne kompliziertes Immobilien-Kauderwelsch.",
+        "actionSubtext": "Es dauert weniger als eine Minute.",
+        "formSectionTitle": "Ihre kostenlose Bewertung",
+        "formSectionDescription": "Geben Sie Ihre Adresse unten ein, um zu beginnen. Wir zeigen Ihnen genau, wo Sie stehen."
+    },
+    "ValuationForm": {
+        "addressLabel": "Immobilienadresse / Postleitzahl",
+        "addressPlaceholder": "Geben Sie Ihre Adresse ein",
+        "propertyTypeLabel": "Immobilientyp",
+        "propertyTypeHouse": "Haus",
+        "propertyTypeFlat": "Wohnung / Apartment",
+        "propertyTypeOther": "Andere",
+        "bedroomsLabel": "Schlafzimmer",
+        "firstNameLabel": "Vorname",
+        "firstNamePlaceholder": "James",
+        "lastNameLabel": "Nachname",
+        "lastNamePlaceholder": "Bond",
+        "emailLabel": "E-Mail-Adresse",
+        "emailPlaceholder": "james@beispiel.de",
+        "phoneLabel": "Telefonnummer (Optional)",
+        "phonePlaceholder": "+49 151 00000000",
+        "submitButton": "Senden Sie meine kostenlose Bewertung",
+        "submittingButton": "Bewertung wird gesendet...",
+        "successMessage": "Erfolg! Wir haben Ihren Bewertungsbericht an Ihre E-Mail gesendet.",
+        "errorInvalid": "Bitte füllen Sie alle Pflichtfelder aus.",
+        "errorVerify": "Wir konnten diese Informationen nicht verifizieren. Bitte versuchen Sie es erneut."
     }
 }

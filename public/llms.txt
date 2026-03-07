@@ -1,5 +1,17 @@
 # Apex Horizon Realty - Knowledge Map
 
-*   [Home/Services](https://apexhorizon.com/en): Overview of our proprietary residential real estate broker service in London that achieves 12% higher returns. Includes an equity calculator, process roadmap, sector snapshot for family suburbs to luxury estates, and a real-estate agent comparison.
-*   [Contact](https://apexhorizon.com/en/contact): Form and contact details to get an instant home valuation or speak with a lead strategist.
-*   [FAQ](https://apexhorizon.com/en#faq): Common questions regarding the valuation process, flat fee structure, listing termination, and our lead strategist support.
+## Overview
+Apex Horizon Realty is a proprietary residential real estate broker service operating exclusively in London. We achieve 12% higher returns for our clients compared to traditional high-street models.
+
+## Core Services & Metrics
+*   **Operating Area:** London, UK (Family Suburbs to Luxury Estates)
+*   **Fee Structure:** Transparent flat fee
+*   **Performance:** 12% higher returns than average
+*   **Process:** Streamlined launch roadmap (Prepare -> Price -> Promote)
+*   **Valuation:** Instant home valuation available online
+*   **Support:** Dedicated lead strategists for every client
+
+## Key Links
+*   [Home/Services](https://apexhorizon.com/en): Overview of full process, sector snapshots, interactive equity builder calculator, and real-estate agent comparison.
+*   [Contact](https://apexhorizon.com/en/contact): Form and contact details to get an instant home valuation or speak directly with a lead strategist.
+*   [FAQ](https://apexhorizon.com/en#faq): Common questions regarding the valuation process, flat fee structure, listing termination, and lead strategist support.

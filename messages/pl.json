@@ -309,6 +309,40 @@
         "contact": {
             "title": "Skontaktuj się z naszymi Głównymi Strategami | Apex Horizon Realty",
             "description": "Gotowy na omówienie kolejnego kroku na londyńskim rynku nieruchomości? Skontaktuj się z naszym zespołem ekspertów w celu poufnej konsultacji lub wyceny nieruchomości."
+        },
+        "valuation": {
+            "title": "Darmowa, natychmiastowa wycena domu | Apex Horizon Realty",
+            "description": "Dowiedz się dokładnie, ile dziś wart jest Twoj dom. Bez żargonu, tylko prawdziwe liczby. Uzyskaj darmową, niezobowiązującą wycenę w kilka sekund."
         }
+    },
+    "ValuationPage": {
+        "titlePart1": "Dowiedz się, ile naprawdę ",
+        "titlePart2": "wart jest Twój dom.",
+        "subtitle": "Przestań zgadywać. Użyj naszego narzędzia, aby uzyskać jasny i realistyczny szacunek wartości Twojego domu w oparciu o dzisiejszy rynek — całkowicie za darmo, bez skomplikowanego żargonu rynku nieruchomości.",
+        "actionSubtext": "Zajmie to mniej niż minutę.",
+        "formSectionTitle": "Twoja darmowa wycena",
+        "formSectionDescription": "Wpisz poniżej swój adres, aby rozpocząć. Pokażemy Ci dokładnie, na czym stoisz."
+    },
+    "ValuationForm": {
+        "addressLabel": "Adres Nieruchomości / Kod Pocztowy",
+        "addressPlaceholder": "Wpisz swój adres",
+        "propertyTypeLabel": "Rodzaj Nieruchomości",
+        "propertyTypeHouse": "Dom",
+        "propertyTypeFlat": "Mieszkanie / Apartament",
+        "propertyTypeOther": "Inne",
+        "bedroomsLabel": "Sypialnie",
+        "firstNameLabel": "Imię",
+        "firstNamePlaceholder": "James",
+        "lastNameLabel": "Nazwisko",
+        "lastNamePlaceholder": "Bond",
+        "emailLabel": "Adres E-mail",
+        "emailPlaceholder": "james@przyklad.pl",
+        "phoneLabel": "Numer Telefonu (Opcjonalny)",
+        "phonePlaceholder": "+48 500 000 000",
+        "submitButton": "Wyślij moją darmową wycenę",
+        "submittingButton": "Wysyłanie wyceny...",
+        "successMessage": "Sukces! Wysłaliśmy Twój raport wyceny na Twój e-mail.",
+        "errorInvalid": "Proszę wypełnić wszystkie wymagane pola.",
+        "errorVerify": "Nie mogliśmy zweryfikować tych informacji. Proszę spróbować ponownie."
     }
 }
