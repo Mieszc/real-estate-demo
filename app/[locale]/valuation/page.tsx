@@ -6,6 +6,7 @@ import { Typography } from "@/components/ui/Typography";
 import { ValuationForm } from "@/components/sections/ValuationForm";
 import { BeamsBackground } from "@/components/ui/beams-background";
 import { Building2 } from "lucide-react";
+import { ValuationSchema } from "@/components/schema/ValuationSchema";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
     const { locale } = await params;
@@ -33,6 +34,13 @@ export default async function ValuationPage({ params }: { params: Promise<{ loca
 
     return (
         <>
+            <ValuationSchema
+                title={t('seo.valuation.title')}
+                description={t('seo.valuation.description')}
+                url={`https://apexhorizon.com/${locale}/valuation`}
+                targetUrl={`https://apexhorizon.com/${locale}/valuation`}
+                language={locale}
+            />
             <Navigation />
             <main className="w-full min-h-screen bg-brand-ink selection:bg-brand-amber selection:text-brand-ink overflow-x-hidden pt-[80px] flex flex-col">
                 {/* We use BeamsBackground to keep the visual identity consistent but tailor it for the focused task */}

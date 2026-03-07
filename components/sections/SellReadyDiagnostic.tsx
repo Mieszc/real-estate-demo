@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, CheckCircle2, ChevronRight, Calculator, Home, User, PaintRoller, TrendingUp, HandCoins, ShieldCheck, Clock } from "lucide-react";
+import { ArrowRight, CheckCircle2, ChevronRight, Home, User, PaintRoller, TrendingUp, HandCoins, ShieldCheck, Clock } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Typography } from "@/components/ui/Typography";
 import { useTranslations } from "next-intl";
@@ -189,7 +189,9 @@ export function SellReadyDiagnostic() {
                                 </Typography>
                                 <p className="text-slate-300 text-lg">
                                     {t.rich('step4.resultText', {
+                                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
                                         goal: t(`step4.goals.${goal}` as any),
+                                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
                                         renovation: t(`step4.renovations.${renovation}` as any),
                                         bold: (chunks) => <strong>{chunks}</strong>
                                     })}

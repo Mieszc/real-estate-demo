@@ -49,6 +49,7 @@ export function ListingSpeedSlider() {
                 window.removeEventListener('touchend', handleMouseUp);
             };
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isDragging]);
 
     return (

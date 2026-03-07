@@ -337,12 +337,13 @@
         "lastNamePlaceholder": "Bond",
         "emailLabel": "Adres E-mail",
         "emailPlaceholder": "james@przyklad.pl",
-        "phoneLabel": "Numer Telefonu (Opcjonalny)",
+        "phoneLabel": "Numer Telefonu",
         "phonePlaceholder": "+48 500 000 000",
         "submitButton": "Wyślij moją darmową wycenę",
         "submittingButton": "Wysyłanie wyceny...",
         "successMessage": "Sukces! Wysłaliśmy Twój raport wyceny na Twój e-mail.",
         "errorInvalid": "Proszę wypełnić wszystkie wymagane pola.",
-        "errorVerify": "Nie mogliśmy zweryfikować tych informacji. Proszę spróbować ponownie."
+        "errorVerify": "Nie mogliśmy zweryfikować tych informacji. Proszę spróbować ponownie.",
+        "errorEmailVerification": "Błąd: podany adres e-mail nie przeszedł weryfikacji. Spróbuj ponownie z innym adresem e-mail."
     }
 }

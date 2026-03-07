@@ -5,11 +5,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { MapPin, CheckCircle2, AlertCircle, Home, BedDouble, User, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { MagneticWrapper } from "@/components/ui/MagneticWrapper";
 
 export function ValuationForm() {
     const t = useTranslations('ValuationForm');
+    const locale = useLocale();
 
     // Form state
     const [formData, setFormData] = useState({
@@ -30,11 +31,23 @@ export function ValuationForm() {
         setFormData(prev => ({ ...prev, [name]: value }));
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        // Basic validation
-        if (!formData.address.trim() || !formData.propertyType || !formData.bedrooms || !formData.firstName.trim() || !formData.lastName.trim() || !formData.email.trim()) {
+        // Email validation regex
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        // Basic validation including phone and valid email
+        if (
+            !formData.address.trim() ||
+            !formData.propertyType ||
+            !formData.bedrooms ||
+            !formData.firstName.trim() ||
+            !formData.lastName.trim() ||
+            !formData.email.trim() ||
+            !formData.phone.trim() ||
+            !emailRegex.test(formData.email)
+        ) {
             setStatus("error");
             setMessage(t('errorInvalid'));
             return;
@@ -42,32 +55,91 @@ export function ValuationForm() {
 
         setStatus("loading");
 
-        // Simulate API delay
-        setTimeout(() => {
-            if (formData.address.toLowerCase().includes("fail")) {
+        const getTranslatedPropertyType = (type: string) => {
+            switch (type) {
+                case 'house': return t('propertyTypeHouse');
+                case 'flat': return t('propertyTypeFlat');
+                case 'other': return t('propertyTypeOther');
+                default: return type;
+            }
+        };
+
+        try {
+            const response = await fetch("https://n8n-selfhost-mlabsai.onrender.com/webhook/bb917840-b063-4470-a0ac-7847ccdbba57", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    address: formData.address,
+                    propertyType: getTranslatedPropertyType(formData.propertyType),
+                    bedrooms: formData.bedrooms,
+                    firstName: formData.firstName,
+                    lastName: formData.lastName,
+                    email: formData.email,
+                    phone: formData.phone,
+                    language: locale
+                }),
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+
+                // Recursively find the first object containing a 'success' property
+                // This makes parsing robust against varying n8n payload wrappers
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                const findResult = (obj: any): any => {
+                    if (!obj || typeof obj !== 'object') return null;
+                    if ('success' in obj) return obj;
+                    for (const key in obj) {
+                        const found = findResult(obj[key]);
+                        if (found) return found;
+                    }
+                    return null;
+                };
+
+                const result = findResult(data);
+                const isExplicitError = String(result?.success) === "false";
+
+                if (isExplicitError) {
+                    setStatus("error");
+                    // Detect specific error message from n8n and serve localized string if matched
+                    const rawMessage = result?.message || "";
+                    if (rawMessage.includes("has not passed the verification check")) {
+                        setMessage(t('errorEmailVerification'));
+                    } else {
+                        setMessage(rawMessage || t('errorVerify'));
+                    }
+                } else {
+                    // Treat as success if explicit error wasn't sent back or success is true
+                    setStatus("success");
+                    setMessage(t('successMessage'));
+                    // Reset form on success
+                    setFormData({
+                        address: "",
+                        propertyType: "",
+                        bedrooms: "",
+                        firstName: "",
+                        lastName: "",
+                        email: "",
+                        phone: ""
+                    });
+                }
+            } else {
                 setStatus("error");
                 setMessage(t('errorVerify'));
-            } else {
-                setStatus("success");
-                setMessage(t('successMessage'));
-                // Reset form on success
-                setFormData({
-                    address: "",
-                    propertyType: "",
-                    bedrooms: "",
-                    firstName: "",
-                    lastName: "",
-                    email: "",
-                    phone: ""
-                });
             }
+        } catch (error) {
+            console.error("Form submission error:", error);
+            setStatus("error");
+            setMessage(t('errorVerify'));
+        }
 
-            // Reset status after 5 seconds
-            setTimeout(() => {
-                setStatus("idle");
-                setMessage("");
-            }, 5000);
-        }, 1500);
+        // Reset status after 5 seconds
+        setTimeout(() => {
+            setStatus("idle");
+            setMessage("");
+        }, 5000);
     };
 
     // Shared input styling base for native selects

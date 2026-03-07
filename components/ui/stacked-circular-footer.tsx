@@ -22,10 +22,10 @@ function StackedCircularFooter() {
                     </div>
 
                     <nav className="mb-12 flex flex-wrap justify-center gap-6">
-                        <a href="/#how-it-works" className="text-brand-stone/80 hover:text-white transition-colors font-medium">{t('howItWorks')}</a>
-                        <a href="/#guarantee" className="text-brand-stone/80 hover:text-white transition-colors font-medium">{t('ourGuarantee')}</a>
-                        <a href="/#success-stories" className="text-brand-stone/80 hover:text-white transition-colors font-medium">{t('successStories')}</a>
-                        <a href="/#faq" className="text-brand-stone/80 hover:text-white transition-colors font-medium">{t('faq')}</a>
+                        <Link href="/#how-it-works" className="text-brand-stone/80 hover:text-white transition-colors font-medium">{t('howItWorks')}</Link>
+                        <Link href="/#guarantee" className="text-brand-stone/80 hover:text-white transition-colors font-medium">{t('ourGuarantee')}</Link>
+                        <Link href="/#success-stories" className="text-brand-stone/80 hover:text-white transition-colors font-medium">{t('successStories')}</Link>
+                        <Link href="/#faq" className="text-brand-stone/80 hover:text-white transition-colors font-medium">{t('faq')}</Link>
                         <Link href="/contact" className="text-brand-stone/80 hover:text-white transition-colors font-medium">{t('contact')}</Link>
                     </nav>
 

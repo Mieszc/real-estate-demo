@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { ChevronLeft, ChevronRight, Star, User } from "lucide-react";
 import { TiltCard } from "@/components/ui/TiltCard";
 import { Typography } from "@/components/ui/Typography";
@@ -98,7 +98,7 @@ export function SuccessCarousel() {
                                         ))}
                                     </div>
                                     <Typography variant="h3" className="text-white mb-6">
-                                        "{stories[currentIndex].result}"
+                                        &quot;{stories[currentIndex].result}&quot;
                                     </Typography>
                                     <Typography variant="lead" className="text-brand-stone/80 mb-8 italic">
                                         {stories[currentIndex].text}

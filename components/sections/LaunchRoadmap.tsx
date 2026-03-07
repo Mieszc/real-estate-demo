@@ -111,7 +111,8 @@ export function LaunchRoadmap() {
     );
 }
 
-function RoadmapStep({ step, index, isEven, progress, threshold, label, title, description }: any) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function RoadmapStep({ step, isEven, progress, threshold, label, title, description }: any) {
     // When progress passes this step's threshold, it becomes "active"
     const isActive = useTransform(progress, (p: number) => p >= (threshold - 0.1));
     const opacity = useTransform(progress, [threshold - 0.3, threshold - 0.1], [0.3, 1]);

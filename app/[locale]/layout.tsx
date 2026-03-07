@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Manrope, Playfair_Display } from "next/font/google";
 import { NoiseOverlay } from "@/components/ui/NoiseOverlay";
 import "@/app/globals.css";
@@ -33,7 +32,7 @@ export default async function LocaleLayout({
   const { locale } = resolvedParams;
 
   // Ensure that the incoming `locale` is valid
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale as typeof routing.locales[number])) {
     notFound();
   }
 

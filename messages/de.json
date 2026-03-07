@@ -337,12 +337,13 @@
         "lastNamePlaceholder": "Bond",
         "emailLabel": "E-Mail-Adresse",
         "emailPlaceholder": "james@beispiel.de",
-        "phoneLabel": "Telefonnummer (Optional)",
+        "phoneLabel": "Telefonnummer",
         "phonePlaceholder": "+49 151 00000000",
         "submitButton": "Senden Sie meine kostenlose Bewertung",
         "submittingButton": "Bewertung wird gesendet...",
         "successMessage": "Erfolg! Wir haben Ihren Bewertungsbericht an Ihre E-Mail gesendet.",
         "errorInvalid": "Bitte füllen Sie alle Pflichtfelder aus.",
-        "errorVerify": "Wir konnten diese Informationen nicht verifizieren. Bitte versuchen Sie es erneut."
+        "errorVerify": "Wir konnten diese Informationen nicht verifizieren. Bitte versuchen Sie es erneut.",
+        "errorEmailVerification": "Fehler: Die angegebene E-Mail-Adresse hat die Überprüfung nicht bestanden. Versuchen Sie es mit einer anderen E-Mail-Adresse."
     }
 }

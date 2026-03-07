@@ -337,12 +337,13 @@
         "lastNamePlaceholder": "Bond",
         "emailLabel": "Email Address",
         "emailPlaceholder": "james@example.com",
-        "phoneLabel": "Phone Number (Optional)",
+        "phoneLabel": "Phone Number",
         "phonePlaceholder": "+44 7000 000000",
         "submitButton": "Send My Free Valuation",
         "submittingButton": "Sending Valuation...",
         "successMessage": "Success! We've sent your valuation report to your email.",
         "errorInvalid": "Please fill out all required fields.",
-        "errorVerify": "We couldn't verify this information. Please try again."
+        "errorVerify": "We couldn't verify this information. Please try again.",
+        "errorEmailVerification": "Error: the specified email address has not passed the verification check. Try again with a different email address."
     }
 }

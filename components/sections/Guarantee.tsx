@@ -30,7 +30,7 @@ export function Guarantee() {
                         Peace of Mind Guarantee
                     </Typography>
                     <Typography variant="lead" className="text-brand-ink/70 max-w-2xl mx-auto">
-                        Real estate transactions don't have to be stressful. We've removed the risk so you can focus on your next chapter.
+                        Real estate transactions don&apos;t have to be stressful. We&apos;ve removed the risk so you can focus on your next chapter.
                     </Typography>
                 </AnimateInView>
 

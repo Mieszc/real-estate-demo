@@ -14,4 +14,5 @@ Apex Horizon Realty is a proprietary residential real estate broker service oper
 ## Key Links
 *   [Home/Services](https://apexhorizon.com/en): Overview of full process, sector snapshots, interactive equity builder calculator, and real-estate agent comparison.
 *   [Contact](https://apexhorizon.com/en/contact): Form and contact details to get an instant home valuation or speak directly with a lead strategist.
+*   [Valuation](https://apexhorizon.com/en/valuation): Dedicated page to seamlessly fill out property details and receive an immediate, data-driven home valuation over email.
 *   [FAQ](https://apexhorizon.com/en#faq): Common questions regarding the valuation process, flat fee structure, listing termination, and lead strategist support.

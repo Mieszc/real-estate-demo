@@ -52,7 +52,7 @@ export function SuccessGrid() {
                                 </div>
                             </div>
                             <Typography variant="h4" className="text-white mb-4 line-clamp-2">
-                                "{story.result}"
+                                &quot;{story.result}&quot;
                             </Typography>
                             <Typography variant="p" className="text-brand-stone/70 text-sm flex-1 leading-relaxed">
                                 {story.text}
