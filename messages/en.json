@@ -2,13 +2,13 @@
     "Navigation": {
         "howItWorks": "The selling process",
         "ourGuarantee": "Our Guarantee",
-        "successStories": "Success stories",
+        "successStories": "Our results",
         "faq": "FAQ",
         "contact": "Contact",
-        "getValuation": "Get Valuation",
-        "getMyValuation": "Get my valuation",
+        "getValuation": "Check my home's value",
+        "getMyValuation": "Check my home's value",
         "stickyTitle": "Ready to maximize your home's value?",
-        "stickyButton": "Get Valuation"
+        "stickyButton": "Check my home's value"
     },
     "Hero": {
         "titlePart1": "Sell Smarter with",
@@ -34,14 +34,14 @@
     "ListingSpeedSlider": {
         "tagline": "The Apex Advantage",
         "title": "Why We Consistently Outperform",
-        "description": "Drag the slider to compare the traditional market reality against the Apex Horizon standard. Time is money in real estate.",
+        "description": "Drag the slider to compare the traditional market reality against the Apex Horizon standard.",
         "traditional": {
             "badge": "Traditional Broker",
             "subtitle": "Stale & Slow",
             "timeOnMarket": {
                 "label": "Days until Sold",
                 "value": "45+ Days",
-                "detail": "Sitting on public sites, making buyers wonder what's wrong."
+                "detail": "Listing sits on portals. Buyers wonder what's wrong."
             },
             "salesPrice": {
                 "label": "Final Payout",
@@ -51,7 +51,7 @@
         },
         "apex": {
             "badge": "The Apex Strategy",
-            "subtitle": "Fast & Profitable",
+            "subtitle": "Fast & Efficient",
             "timeOnMarket": {
                 "label": "Days until Sold",
                 "value": "7 Days",
@@ -153,9 +153,9 @@
         "ctaAfter": "Extract This Equity Now"
     },
     "MicroCaseStudies": {
-        "badge": "Winning Snapshots",
-        "title": "The Proof is in the Profit",
-        "description": "We don't sell relationships; we sell results. Here's a look at our recent performance metrics.",
+        "badge": "Results",
+        "title": "The results speak for themselves",
+        "description": "We don't sell relationships; we sell results. The numbers speak for themselves. Take a look.",
         "studies": {
             "0": {
                 "metric": "5 Days",
@@ -184,7 +184,7 @@
         }
     },
     "SellReadyDiagnostic": {
-        "badge": "Pre-Launch Diagnostic",
+        "badge": "Diagnosis",
         "title": "Are You Ready for the Market?",
         "description": "Take our 30-second assessment. We'll diagnose your home's current market position and identify specific levers to maximize your final sale price.",
         "stepProgress": "Step {step} of {total}",
@@ -213,7 +213,7 @@
                     "desc": "Needs a refresh"
                 },
                 "partial": {
-                    "label": "Partial Updates",
+                    "label": "Partial Renovations",
                     "desc": "Kitchen or baths done"
                 },
                 "full": {
@@ -229,7 +229,7 @@
                     "label": "No, exploring my options"
                 },
                 "yes_active": {
-                    "label": "Yes, currently active but unhappy"
+                    "label": "Yes, currently active but I'm unhappy"
                 },
                 "expired": {
                     "label": "Listing recently expired/withdrawn"

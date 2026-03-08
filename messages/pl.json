@@ -2,13 +2,13 @@
     "Navigation": {
         "howItWorks": "Proces sprzedaży",
         "ourGuarantee": "Nasza gwarancja",
-        "successStories": "Historie sukcesu",
+        "successStories": "Nasze wyniki",
         "faq": "FAQ",
         "contact": "Kontakt",
-        "getValuation": "Ile wart jest mój dom?",
+        "getValuation": "Sprawdź wartość mojego domu",
         "getMyValuation": "Sprawdź wartość mojego domu",
         "stickyTitle": "Chcesz zmaksymalizować wartość swojego domu?",
-        "stickyButton": "Ile wart jest mój dom?"
+        "stickyButton": "Sprawdź wartość mojego domu"
     },
     "Hero": {
         "titlePart1": "Sprzedawaj mądrzej z",
@@ -34,14 +34,14 @@
     "ListingSpeedSlider": {
         "tagline": "Przewaga Apex",
         "title": "Dlaczego konsekwentnie osiągamy lepsze wyniki",
-        "description": "Przeciągnij suwak, aby porównać tradycyjną rzeczywistość rynkową ze standardem Apex Horizon. Czas to pieniądz w branży nieruchomości.",
+        "description": "Przeciągnij suwak, aby porównać tradycyjną rzeczywistość rynkową ze standardem Apex Horizon.",
         "traditional": {
             "badge": "Tradycyjny Pośrednik",
             "subtitle": "Przestarzałe i Powolne",
             "timeOnMarket": {
                 "label": "Dni do sprzedaży",
                 "value": "45+ Dni",
-                "detail": "Zaleganie na portalach; kupujący zastanawiają się, co jest nie tak."
+                "detail": "Oferta zalega na portalach. Kupujący zastanawiają się, co jest nie tak."
             },
             "salesPrice": {
                 "label": "Ostateczna wypłata",
@@ -51,7 +51,7 @@
         },
         "apex": {
             "badge": "Strategia Apex",
-            "subtitle": "Szybko i Zyskownie",
+            "subtitle": "Szybko i Wydajnie",
             "timeOnMarket": {
                 "label": "Dni do sprzedaży",
                 "value": "7 Dni",
@@ -153,9 +153,9 @@
         "ctaAfter": "Wydobądź Ten Kapitał Teraz"
     },
     "MicroCaseStudies": {
-        "badge": "Zwycięskie migawki",
-        "title": "Dowód tkwi w zysku",
-        "description": "Nie sprzedajemy relacji; sprzedajemy wyniki. Oto spojrzenie na nasze ostatnie wskaźniki wydajności.",
+        "badge": "Wyniki",
+        "title": "Bronią nas nasze wyniki",
+        "description": "Nie sprzedajemy relacji; sprzedajemy wyniki. Liczby mówią same za siebie. Sprawdź.",
         "studies": {
             "0": {
                 "metric": "5 dni",
@@ -184,7 +184,7 @@
         }
     },
     "SellReadyDiagnostic": {
-        "badge": "Diagnoza przed premierą",
+        "badge": "Diagnoza",
         "title": "Czy jesteś gotowy na wejście na rynek?",
         "description": "Wykonaj naszą 30-sekundową ocenę. Zdiagnozujemy obecną pozycję rynkową Twojego domu i zidentyfikujemy konkretne dźwignie, aby zmaksymalizować Twoją ostateczną cenę sprzedaży.",
         "stepProgress": "Krok {step} z {total}",
@@ -213,7 +213,7 @@
                     "desc": "Wymaga odświeżenia"
                 },
                 "partial": {
-                    "label": "Częściowe aktualizacje",
+                    "label": "Częściowe remonty",
                     "desc": "Zrobiona kuchnia lub łazienki"
                 },
                 "full": {
@@ -229,7 +229,7 @@
                     "label": "Nie, badam swoje opcje"
                 },
                 "yes_active": {
-                    "label": "Yes, obecnie aktywnie, ale niezadowolony"
+                    "label": "Tak, obecnie aktywnie, ale jestem niezadowolony"
                 },
                 "expired": {
                     "label": "Oferta niedawno wygasła / została wycofana"

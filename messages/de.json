@@ -2,13 +2,13 @@
     "Navigation": {
         "howItWorks": "Der Verkaufsprozess",
         "ourGuarantee": "Unsere Garantie",
-        "successStories": "Erfolgsgeschichten",
+        "successStories": "Unsere Ergebnisse",
         "faq": "FAQ",
         "contact": "Kontakt",
-        "getValuation": "Bewertung erhalten",
-        "getMyValuation": "Meine Bewertung",
+        "getValuation": "Hauswert prüfen",
+        "getMyValuation": "Hauswert prüfen",
         "stickyTitle": "Bereit, den Wert Ihres Zuhauses zu maximieren?",
-        "stickyButton": "Bewertung erhalten"
+        "stickyButton": "Hauswert prüfen"
     },
     "Hero": {
         "titlePart1": "Intelligenter verkaufen mit",
@@ -34,14 +34,14 @@
     "ListingSpeedSlider": {
         "tagline": "Der Apex Vorteil",
         "title": "Warum wir beständig besser abschneiden",
-        "description": "Ziehen Sie den Schieberegler, um die traditionelle Marktrealität mit dem Standard von Apex Horizon zu vergleichen. Zeit ist Geld in der Immobilienbranche.",
+        "description": "Ziehen Sie den Schieberegler, um die traditionelle Marktrealität mit dem Standard von Apex Horizon zu vergleichen.",
         "traditional": {
             "badge": "Traditioneller Makler",
             "subtitle": "Abgestanden & Langsam",
             "timeOnMarket": {
                 "label": "Tage bis zum Verkauf",
                 "value": "45+ Tage",
-                "detail": "Sitzt auf öffentlichen Portalen; Käufer fragen sich, was nicht stimmt."
+                "detail": "Angebot verweilt auf Portalen. Käufer fragen sich, was nicht stimmt."
             },
             "salesPrice": {
                 "label": "Endgültige Auszahlung",
@@ -51,7 +51,7 @@
         },
         "apex": {
             "badge": "Die Apex Strategie",
-            "subtitle": "Schnell & Profitabel",
+            "subtitle": "Schnell & Effizient",
             "timeOnMarket": {
                 "label": "Tage bis zum Verkauf",
                 "value": "7 Tage",
@@ -153,9 +153,9 @@
         "ctaAfter": "Dieses Eigenkapital jetzt extrahieren"
     },
     "MicroCaseStudies": {
-        "badge": "Gewinner-Schnappschüsse",
-        "title": "Der Beweis liegt im Gewinn",
-        "description": "Wir verkaufen keine Beziehungen; wir verkaufen Ergebnisse. Hier ist ein Blick auf unsere jüngsten Leistungskennzahlen.",
+        "badge": "Ergebnisse",
+        "title": "Unsere Ergebnisse sprechen für sich",
+        "description": "Wir verkaufen keine Beziehungen; wir verkaufen Ergebnisse. Die Zahlen sprechen für sich. Schauen Sie selbst.",
         "studies": {
             "0": {
                 "metric": "5 Tage",
@@ -184,7 +184,7 @@
         }
     },
     "SellReadyDiagnostic": {
-        "badge": "Pre-Launch-Diagnose",
+        "badge": "Diagnose",
         "title": "Sind Sie bereit für den Markt?",
         "description": "Machen Sie unsere 30-Sekunden-Bewertung. Wir diagnostizieren die aktuelle Marktposition Ihres Hauses und identifizieren spezifische Hebel, um Ihren endgültigen Verkaufspreis zu maximieren.",
         "stepProgress": "Schritt {step} von {total}",
@@ -213,7 +213,7 @@
                     "desc": "Benötigt eine Auffrischung"
                 },
                 "partial": {
-                    "label": "Teilweise Aktualisierungen",
+                    "label": "Teilweise Renovierungen",
                     "desc": "Küche oder Bäder gemacht"
                 },
                 "full": {
@@ -229,7 +229,7 @@
                     "label": "Nein, ich prüfe meine Optionen"
                 },
                 "yes_active": {
-                    "label": "Ja, derzeit aktiv, aber unzufrieden"
+                    "label": "Ja, derzeit aktiv, aber ich bin unzufrieden"
                 },
                 "expired": {
                     "label": "Angebot kürzlich abgelaufen / zurückgezogen"
