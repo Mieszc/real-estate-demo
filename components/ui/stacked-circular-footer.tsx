@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/Input"
 import { Label } from "@/components/ui/Label"
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
 import { MagneticWrapper } from "@/components/ui/MagneticWrapper"
+import { Logo } from "@/components/ui/Logo"
 
 import { useTranslations } from "next-intl"
 import { Link } from "@/i18n/routing"
@@ -17,8 +18,8 @@ function StackedCircularFooter() {
 
             <div className="container mx-auto px-6 max-w-[1280px] relative z-10">
                 <div className="flex flex-col items-center">
-                    <div className="mb-8 rounded-full bg-brand-amber/10 border border-brand-amber/20 p-8">
-                        <Icons.logo className="icon-class w-8 h-8 text-brand-amber" />
+                    <div className="mb-8">
+                        <Logo iconClassName="w-10 h-10" textClassName="text-white text-2xl" />
                     </div>
 
                     <nav className="mb-12 flex flex-wrap justify-center gap-6">

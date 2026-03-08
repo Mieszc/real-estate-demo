@@ -8,6 +8,7 @@ import { MagneticWrapper } from "@/components/ui/MagneticWrapper";
 import { usePathname, useRouter } from '@/i18n/routing';
 import { Link } from '@/i18n/routing';
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
+import { Logo } from "@/components/ui/Logo";
 
 import { useTranslations } from 'next-intl';
 
@@ -76,9 +77,9 @@ export function Navigation() {
                     {/* Logo */}
                     <Link
                         href="/"
-                        className={`font-bold text-xl tracking-tight transition-colors duration-300 ${isScrolled ? "text-black" : "text-white"}`}
+                        className="pointer-events-auto"
                     >
-                        Apex <span className="text-brand-amber">Horizon.</span>
+                        <Logo textClassName={isScrolled ? "text-brand-ink" : "text-white"} />
                     </Link>
 
                     {/* Desktop Links */}
